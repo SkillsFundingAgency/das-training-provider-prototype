@@ -1,0 +1,33 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Access denied - Training provider
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        You do not have permission to access this page
+      </h1>
+      
+      
+      <p class="gov-body">
+        If you think you should have permission to access this page or want to confirm what permissions you have, email an account owner:
+      </p>
+      
+      <ul class="govuk-list">
+	      	<li>Jay Smith, <a href="mailto:jay.smith@gmail.com">jay.smith@gmail.com</a></li>
+	      	<li>Fred Bloggs, <a href="mailto:fred.bloggs@gmail.com">fred.bloggs@gmail.com</a></li>
+      </ul>
+      <br>
+      <button class="govuk-button" data-module="govuk-button">
+		  Go back to the home page
+		</button>
+
+    </div>
+  </div>
+
+{% endblock %}
