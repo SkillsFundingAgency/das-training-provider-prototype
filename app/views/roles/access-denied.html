@@ -5,8 +5,15 @@
   Access denied - Training provider
 {% endblock %}
 
+
+{% block main %}
+
+{% include "../includes/account-header+nav.html" %}
+
 {% block content %}
 
+<div class="govuk-width-container">
+	
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl">
@@ -18,7 +25,7 @@
         If you think you should have permission to access this page or want to confirm what permissions you have, email an account owner:
       </p>
       
-      <ul class="govuk-list">
+      <ul class="govuk-list govuk-list--bullet">
 	      	<li>Jay Smith, <a href="mailto:jay.smith@gmail.com">jay.smith@gmail.com</a></li>
 	      	<li>Fred Bloggs, <a href="mailto:fred.bloggs@gmail.com">fred.bloggs@gmail.com</a></li>
       </ul>
@@ -29,5 +36,8 @@
 
     </div>
   </div>
+</div>
+
+{% endblock %}
 
 {% endblock %}
