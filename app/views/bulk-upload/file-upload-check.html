@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Bulk uploads prototype - Training provider
+{% endblock %}
+
+
+{% block main %}
+
+{% include "../includes/account-header+nav.html" %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+	
+	<a href="file-upload" class="govuk-back-link">Back</a>
+	
+
+	<div class="govuk-grid-row">
+	    <div class="govuk-grid-column-full">
+		    		    
+					    
+		    <h1 class="govuk-heading-l  govuk-!-margin-top-4">Check your entries</h1>		    
+		    
+		    
+		    <p>Summary (per employer: total cost | number of apprentices | messages | status | incomplete records</p>
+		    
+		    <p>Summary all: total cost | number of apprentices</p>
+		    
+		    <p>duplicates, over-writing?</p>
+		    
+		    <p>Automatically added apprentice request/cohorts</p>
+		    
+		    <p>Potential data lock issues?</p>
+		    		    		    
+		    <p>Detailed view</p>
+		    		    
+		    <h2 class="govuk-heading-l">CTA's</h2>
+		    
+		    <ul class="gov-list">
+			    
+		    	<li><a href="#">send all uploaded apprentices to Employers</a></li>
+			   <li><a href="#">Save</a></li>
+			    <li><a href="#">Cancel</a></li>
+		    
+		    </ul>
+		    		    
+		    			
+		    
+		    
+	    </div>
+	</div>
+
+</div>
+
+
+{% endblock %}
+
+{% endblock %}
