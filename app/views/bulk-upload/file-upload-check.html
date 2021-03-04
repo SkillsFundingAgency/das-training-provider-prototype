@@ -30,23 +30,205 @@
 		    
 		    <p>duplicates, over-writing?</p>
 		    
-		    <p>Automatically added apprentice request/cohorts</p>
+		    <p>Automatically added apprentice request/cohorts, or used existing cohorts</p>
 		    
 		    <p>Potential data lock issues?</p>
 		    		    		    
-		    <p>Detailed view</p>
-		    		    
-		    <h2 class="govuk-heading-l">CTA's</h2>
+		    		    		    
+		    		    		    
+		    <!-- Detailed view
 		    
-		    <ul class="gov-list">
+		    
+		    <details class="govuk-details" data-module="govuk-details">
+			  <summary class="govuk-details__summary">
+			    <span class="govuk-details__summary-text">
+			      View all records
+			    </span>
+			  </summary>
+			  <div class="govuk-details__text">
+				  
+				  
+				<div class="group-header">
+	                <h3 class="heading-medium group-title">1 x Food and Drink: Meat and Poultry Industry Skills, Level: 3</h3>
+	                <p>Training code: 403-2-1</p>
+                </div>
 			    
-		    	<li><a href="#">send all uploaded apprentices to Employers</a></li>
-			   <li><a href="#">Save</a></li>
-			    <li><a href="#">Cancel</a></li>
-		    
-		    </ul>
-		    		    
-		    			
+			    <table class="govuk-table govuk-!-margin-top-8">
+				  <thead class="govuk-table__head">
+				    <tr class="govuk-table__row">
+				      <th scope="col" class="govuk-table__header">Name</th>
+				      <th scope="col" class="govuk-table__header">Employer</th>
+				      <th scope="col" class="govuk-table__header">Cohort</th>
+				      <th scope="col" class="govuk-table__header">Unique learner number</th>
+				      <th scope="col" class="govuk-table__header">Training dates</th>
+				      <th scope="col" class="govuk-table__header">Cost</th>
+				    </tr>
+				  </thead>
+				  <tbody class="govuk-table__body">
+				    <tr class="govuk-table__row">
+				      <td class="govuk-table__cell">Louise James</td>
+				      <td class="govuk-table__cell">Sainsbury's</td>
+				      <td class="govuk-table__cell">1234567</td>
+				      <td class="govuk-table__cell">93849228</td>
+				      <td class="govuk-table__cell">May 2017 to Jul 2017</td>
+				      <td class="govuk-table__cell">£1200</td>
+				    </tr>
+				    <tr class="govuk-table__row">
+				      <td class="govuk-table__cell">Mark Smith</td>
+				      <td class="govuk-table__cell">Sainsbury's</td>
+				      <td class="govuk-table__cell">93849228</td>
+				      <td class="govuk-table__cell">93849228</td>
+				      <td class="govuk-table__cell">May 2017 to Jul 2017</td>
+				      <td class="govuk-table__cell">£700</td>
+				    </tr>
+				    <tr class="govuk-table__row">
+				      <td class="govuk-table__cell">David Clarke</td>
+				      <td class="govuk-table__cell">Tesco</td>
+				      <td class="govuk-table__cell">01981733</td>
+				      <td class="govuk-table__cell">9384922</td>
+				      <td class="govuk-table__cell">May 2017 to Jul 2017  	</td>
+				      <td class="govuk-table__cell">£1789</td>
+				    </tr>
+				  </tbody>
+				</table>
+
+			  </div>
+			</details>
+			
+			
+			 END Detailed view -->
+			
+			
+			<!--  Accordian view -->
+			
+			
+			<div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+				
+			  <div class="govuk-accordion__section ">
+				  
+			    <div class="govuk-accordion__section-header">
+			      <h2 class="govuk-accordion__section-heading">
+			        <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+			          Cohorts added or used
+			        </span>
+			      </h2>
+			    </div>
+			    
+			    <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+			      
+				<dl class="govuk-summary-list govuk-!-margin-bottom-8">
+				  <div class="govuk-summary-list__row">
+				    <dt class="govuk-summary-list__key">
+				      1234567
+				    </dt>
+				    <dd class="govuk-summary-list__value">
+				      Added
+				    </dd>
+				  </div>
+				  <div class="govuk-summary-list__row">
+				    <dt class="govuk-summary-list__key">
+				     009988
+				    </dt>
+				    <dd class="govuk-summary-list__value">
+				      Added
+				    </dd>
+				  </div>
+				  <div class="govuk-summary-list__row">
+				    <dt class="govuk-summary-list__key" style="border-bottom: none;">
+				      67890
+				    </dt>
+				    <dd class="govuk-summary-list__value" style="border-bottom: none;">
+				      Used
+				    </dd>
+				  </div>
+				</dl>
+			      
+			    </div>
+			  </div>
+			  
+			  
+			  <div class="govuk-accordion__section ">
+			    <div class="govuk-accordion__section-header">
+			      <h2 class="govuk-accordion__section-heading">
+			        <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+			          View all records
+			        </span>
+			      </h2>
+			    </div>
+			    <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+			      
+			      
+			      <div class="group-header">
+	                <h3 class="govuk-heading-m group-title">1 x Food and Drink: Meat and Poultry Industry Skills, Level: 3</h3>
+	                <p>Training code: 403-2-1</p>
+                </div>
+                
+                
+			      <table class="govuk-table  govuk-!-margin-bottom-8">
+				  <thead class="govuk-table__head">
+				    <tr class="govuk-table__row">
+				      <th scope="col" class="govuk-table__header">Name</th>
+				      <th scope="col" class="govuk-table__header">Employer</th>
+				      <th scope="col" class="govuk-table__header">Cohort</th>
+				      <th scope="col" class="govuk-table__header">Unique learner number</th>
+				      <th scope="col" class="govuk-table__header">Training dates</th>
+				      <th scope="col" class="govuk-table__header">Cost</th>
+				    </tr>
+				  </thead>
+				  <tbody class="govuk-table__body">
+				    <tr class="govuk-table__row">
+				      <td class="govuk-table__cell">Louise James</td>
+				      <td class="govuk-table__cell">Sainsbury's</td>
+				      <td class="govuk-table__cell">1234567</td>
+				      <td class="govuk-table__cell">93849228</td>
+				      <td class="govuk-table__cell">May 2017 to Jul 2017</td>
+				      <td class="govuk-table__cell">£1200</td>
+				    </tr>
+				    <tr class="govuk-table__row">
+				      <td class="govuk-table__cell">Mark Smith</td>
+				      <td class="govuk-table__cell">Sainsbury's</td>
+				      <td class="govuk-table__cell">93849228</td>
+				      <td class="govuk-table__cell">93849228</td>
+				      <td class="govuk-table__cell">May 2017 to Jul 2017</td>
+				      <td class="govuk-table__cell">£700</td>
+				    </tr>
+				    <tr class="govuk-table__row">
+				      <td class="govuk-table__cell">David Clarke</td>
+				      <td class="govuk-table__cell">Tesco</td>
+				      <td class="govuk-table__cell">01981733</td>
+				      <td class="govuk-table__cell">9384922</td>
+				      <td class="govuk-table__cell">May 2017 to Jul 2017  	</td>
+				      <td class="govuk-table__cell">£1789</td>
+				    </tr>
+				  </tbody>
+				</table>
+			      
+			    </div>
+			  </div>
+			  
+			  
+			</div>
+			
+			<!--  END Accordian view -->
+			
+			
+			<!--  CTA's -->
+			
+			<div class="govuk-button-group">
+			  <a class="govuk-button" data-module="govuk-button" href="succsess">
+			    Save and send to employers
+			  </a>
+			
+			  <a class="govuk-button govuk-button--secondary" data-module="govuk-button">
+			    Save as draft
+			  </a>
+			</div>
+			
+			
+			<p class="gov-body"><a class="govuk-link" href="index">Cancel</a></p>
+			
+			
+			<!--  END CTA's -->
 		    
 		    
 	    </div>
