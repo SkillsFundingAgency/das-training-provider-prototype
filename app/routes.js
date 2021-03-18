@@ -9,7 +9,7 @@ const router = express.Router()
 //CSV upload or manual
 router.post('/bulk-upload/manual-or-upload', (req, res) => {
 	if(req.session.data['add-apprentice-option'] == 'added-manually'){
-		res.redirect('another-page')
+		res.redirect('manual')
 	} else {
 		res.redirect('file-upload')
 	}
