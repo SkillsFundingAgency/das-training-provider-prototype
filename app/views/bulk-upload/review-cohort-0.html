@@ -1,0 +1,139 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Bulk uploads prototype - Training provider
+{% endblock %}
+
+
+{% block main %}
+
+{% include "./includes/account-header+nav.html" %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+	
+	<a href="#" class="govuk-back-link">Back</a>
+	
+
+	<div class="govuk-grid-row">
+	    <div class="govuk-grid-column-full">
+					    
+		    <h1 class="govuk-heading-l  govuk-!-margin-top-4">Review your apprentice request</h1>		 
+		    
+	    </div>
+	</div>
+	
+	
+	<div class="govuk-grid-row">
+	    <div class="govuk-grid-column-one-third">
+		    
+		    <span class="govuk-caption-l">Total apprentices:</span>
+			<h1 class="govuk-heading-l">0</h1>
+	
+	    </div>
+	    
+		<div class="govuk-grid-column-one-third">
+		    		    
+		    <span class="govuk-caption-l">Incomplete records:</span>
+			<h1 class="govuk-heading-l">0</h1>
+	
+	    </div>
+
+	    <div class="govuk-grid-column-one-third">
+		    		    
+		    <span class="govuk-caption-l">Total cost:</span>
+			<h1 class="govuk-heading-l">0</h1>
+	
+	    </div>
+	</div>
+		
+	
+	<div class="govuk-grid-row">
+	    <div class="govuk-grid-column-two-thirds">
+		    
+		    <!-- <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible"> -->
+		    
+		    <!-- <h2 class="govuk-heading-m">Summary:</h2> -->
+		    		    
+		    <dl class="govuk-summary-list govuk-summary-list">
+			  <div class="govuk-summary-list__row">
+			    <dt class="govuk-summary-list__key">
+			      Employer
+			    </dt>
+			    <dd class="govuk-summary-list__value">
+			      Sainsbury's
+			    </dd>
+			  </div>
+			  <div class="govuk-summary-list__row">
+			    <dt class="govuk-summary-list__key">
+			      Apprentice request reference number
+			    </dt>
+			    <dd class="govuk-summary-list__value">
+					LPG302
+			    </dd>
+			  </div>
+			  <div class="govuk-summary-list__row">
+			    <dt class="govuk-summary-list__key">
+			      Status
+			    </dt>
+			    <dd class="govuk-summary-list__value">
+			      Ready for review
+			    </dd>
+			  </div>
+			 <!--  <div class="govuk-summary-list__row">
+			    <dt class="govuk-summary-list__key">
+			      Status
+			    </dt>
+			    <dd class="govuk-summary-list__value">
+			      xxx
+			    </dd>
+			  </div> -->
+			  <div class="govuk-summary-list__row">
+			    <dt class="govuk-summary-list__key">
+			      Message from employer
+			    </dt>
+			    <dd class="govuk-summary-list__value">
+			      -
+			    </dd>
+			  </div>
+			</dl>
+
+		</div>
+	</div>
+	
+
+	<div class="govuk-grid-row">
+	    <div class="govuk-grid-column-full">
+			<p class="govuk-body">There are currently no apprentices associated to this request.</p>
+	    </div>
+	</div>
+
+	
+	<div class="govuk-inset-text govuk-!-margin-top-0">		
+		<p><a href="#" class="govuk-link group-title">Add an apprentice</a></p>
+		<p><a href="#" class="govuk-link">Add multiple apprentices</a></p>
+	</div>
+
+
+
+			<!--  CTA's -->
+			<!-- <h3 class="govuk-heading-m group-title">Send to employer</h3> -->
+			<button class="govuk-button" data-module="govuk-button">
+				Save and continue
+			  </button><br>
+			  <button class="govuk-button govuk-button--warning" data-module="govuk-button">
+				Delete apprentice group
+			  </button>
+			
+			<!--  END CTA's -->
+
+
+
+</div>
+
+
+{% endblock %}
+
+{% endblock %}

@@ -1,0 +1,114 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Bulk uploads prototype - Training provider
+{% endblock %}
+
+
+{% block main %}
+
+{% include "./includes/account-header+nav.html" %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+	
+	<a href="file-upload" class="govuk-back-link">Back</a>
+	
+
+	<div class="govuk-grid-row">
+	    <div class="govuk-grid-column-full">
+		    		    
+					    
+		    
+		    <h1 class="govuk-heading-l  govuk-!-margin-top-4">Your CSV file has errors </h1>
+		    
+		    
+		    <div class="govuk-warning-text">
+			  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+			  <strong class="govuk-warning-text__text">
+			    <span class="govuk-warning-text__assistive">Warning</span>
+			    We’ve found some errors in your CSV file. You’ll need to fix them and upload it again. 
+			  </strong>
+			</div>
+		   		  
+		   		  
+	   		  <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+  
+		    
+		    <table class="govuk-table govuk-!-margin-top-8">
+			  <caption class="govuk-table__caption govuk-table__caption--l govuk-!-margin-bottom-4"><span style="font-size: 1.5rem; line-height: 1.25;">Records with errors</span></caption>
+			  <thead class="govuk-table__head">
+			    <tr class="govuk-table__row">
+			      <th scope="col" class="govuk-table__header">Row</th>
+			      <th scope="col" class="govuk-table__header">Employer</th>
+			      <th scope="col" class="govuk-table__header">Apprentice group</th>
+			      <th scope="col" class="govuk-table__header">Unique learner number</th>
+			      <th scope="col" class="govuk-table__header">Name</th>
+			      <th scope="col" class="govuk-table__header">Errors</th>
+			    </tr>
+			  </thead>
+			  <tbody class="govuk-table__body">
+			    <tr class="govuk-table__row">
+			      <th scope="row" class="govuk-table__header">1</th>
+			      <td class="govuk-table__cell">Sainsbury's</td>
+			      <td class="govuk-table__cell">1234567</td>
+			      <td class="govuk-table__cell">93849228</td>
+			      <td class="govuk-table__cell">Louise James</td>
+			      <td class="govuk-table__cell">Error message, lorem ipsum</td>
+			    </tr>
+			    <tr class="govuk-table__row">
+			      <th scope="row" class="govuk-table__header">2</th>
+			      <td class="govuk-table__cell">Sainsbury's</td>
+			      <td class="govuk-table__cell">93849228</td>
+			      <td class="govuk-table__cell">93849228</td>
+			      <td class="govuk-table__cell">Mark Smith</td>
+			      <td class="govuk-table__cell">Error message, lorem ipsum</td>
+			    </tr>
+			    <tr class="govuk-table__row">
+			      <th scope="row" class="govuk-table__header">3</th>
+			      <td class="govuk-table__cell">Tesco</td>
+			      <td class="govuk-table__cell">0198173063</td>
+			      <td class="govuk-table__cell">93849228</td>
+			      <td class="govuk-table__cell">David Clarke</td>
+			      <td class="govuk-table__cell"><strong>You do not have permission</strong> to create an apprentice group for this employer</td>
+			    </tr>
+			  </tbody>
+			</table>
+			
+			
+		    <p class="govuk-body">You can also <a href="#">download the CSV file showing errors</a></p>
+
+			
+			<form action="file-upload-check" method="post" class="govuk-!-margin-top-8" novalidate>
+			
+			<legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+	            <h1 class="govuk-fieldset__heading">
+	              Upload a CSV file again
+	            </h1>
+	          </legend>
+	              
+	          <div class="govuk-form-group  govuk-!-margin-top-8">
+			  <label class="govuk-label" for="file-upload-1">
+			    Choose file
+			  </label>
+			  <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+			</div>
+				
+	          <button class="govuk-button" data-module="govuk-button">
+	            Continue
+	          </button>
+	        </form>
+	        
+	        <p class="govuk-body"><a href="index">Cancel</a></p>		    
+		    
+	    </div>
+	</div>
+
+</div>
+
+
+{% endblock %}
+
+{% endblock %}
