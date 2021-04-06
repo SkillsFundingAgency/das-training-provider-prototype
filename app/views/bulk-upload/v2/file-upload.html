@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Bulk uploads prototype - Training provider
+{% endblock %}
+
+
+{% block main %}
+
+{% include "./includes/account-header+nav.html" %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+
+  <a href="index" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form action="file-upload-errors" method="post" novalidate>
+
+		<legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              Upload a CSV file
+            </h1>
+          </legend>
+
+          <p class="govuk-body">You must use a CSV file to do a bulk upload. Once uploaded, you'll be able to:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>see if there are any errors in the file to fix and upload it again if required</li>
+            <li>check and confirm your new apprentices details</li>
+            <li>save and send to the employer to approve</li>
+          </ul>
+
+          <div class="govuk-inset-text">
+		  Uploading a file <strong>does not</strong> overwrite any existing apprentices. Only new apprentices can be added.
+		</div>
+
+          <div class="govuk-form-group">
+		  <label class="govuk-label" for="file-upload-1">
+		  </label>
+		  <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+		</div>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+
+        <h3 class="govuk-heading-m govuk-!-margin-top-4">What you'll need</h3>
+        <p>If you have a management information system, it may be able to create a CSV file for you.</p>
+        <p>You can also use the <a href="https://www.gov.uk/government/publications/apprenticeship-service-bulk-upload-specification" class="govuk-link govuk-link--no-visited-state">apprenticeship service bulk upload template</a>.
+        </p>
+
+
+
+      </div>
+    </div>
+  </main>
+
+
+
+
+
+
+</div>
+{% endblock %}
+
+{% endblock %}
