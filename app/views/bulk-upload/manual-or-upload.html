@@ -25,28 +25,29 @@
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                 <h1 class="govuk-fieldset__heading">
-                  How do you want to add new apprentices?
+                  Add new apprentices
                 </h1>
               </legend>
-              <div class="govuk-radios">
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="add-apprentice-manually" name="add-apprentice-option" type="radio" value="added-manually">
-                  <label class="govuk-label govuk-radios__label" for="added manually">
-                    Manually
-                  </label>
-                  <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
-		          You’ll need to add details of each apprentice individually.
-		        </div>
-                </div>
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="add-apprentice-upload" name="add-apprentice-option" type="radio" value="added-upload">
                   <label class="govuk-label govuk-radios__label" for="added upload">
                     Upload a CSV file
                   </label>
                   <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
-		          You can add details of multiple apprentices through a bulk upload process.
+                    You can add details of one or more apprentices using bulk upload.
 		        </div>
                 </div>
+                <div class="govuk-radios">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="add-apprentice-manually" name="add-apprentice-option" type="radio" value="added-manually">
+                    <label class="govuk-label govuk-radios__label" for="added manually">
+                      Manually
+                    </label>
+                    <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+                You’ll need to add details of each apprentice individually.
+              </div>
+                  </div>
+  
 
             </fieldset>
           </div>
