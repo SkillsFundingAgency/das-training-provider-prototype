@@ -15,5 +15,14 @@ router.post('/bulk-upload/manual-or-upload', (req, res) => {
 	}
 })
 
+router.post('/bulk-upload/v2/manual-or-upload', (req, res) => {
+	if(req.session.data['add-apprentice-option'] == 'added-manually'){
+		res.redirect('manual')
+	} else {
+		res.redirect('file-upload')
+	}
+})
+
+
 
 module.exports = router
