@@ -13,42 +13,39 @@
 
 
 <div class="govuk-width-container">
-	
-	<a href="file-upload" class="govuk-back-link">Back</a>
-	
-	<div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="govuk-error-summary">
-		<h2 class="govuk-error-summary__title" id="error-summary-title">
-		  There is a problem
-		</h2>
-		<div class="govuk-error-summary__body">
-		  <!-- <ul class="govuk-list govuk-error-summary__list"> -->
-			<span id="file-error" class="govuk-error-message">
-				<span class="govuk-visually-hidden">Error:</span> The file could not be uploaded because it contains errors. No records have been uploaded.
-			  </span>
-			<!-- <li>
-				<a href="#passport-issued-error">We’ve found some errors in your CSV file. You’ll need to fix them and upload it again.</a>
-			</li> -->
-		  <!-- </ul> -->
-		  <p>
-			There are <strong>4</strong> errors across <strong>3</strong> records that you need to fix.
-		 </p>
-		  <p>  
-			You can also <a href="#" class="govuk-link govuk-link--no-visited-state">download the CSV file showing errors</a>.
-		  </p>
 
-		</div>
+	<a href="file-upload" class="govuk-back-link">Back</a>
+
+	<div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="govuk-error-summary">
+          <h2 class="govuk-error-summary__title" id="error-summary-title">There is a problem</h2>
+          <div class="govuk-error-summary__body">
+               <!-- <ul class="govuk-list govuk-error-summary__list"> -->
+               <span id="file-error" class="govuk-error-message">
+                    <span class="govuk-visually-hidden">Error:</span> The file could not be uploaded because it contains errors. No records have been uploaded.
+               </span>
+               <!-- <li>
+               <a href="#passport-issued-error">We’ve found some errors in your CSV file. You’ll need to fix them and upload it again.</a>
+               </li> -->
+               <!-- </ul> -->
+               <p>
+                    There are <strong>4</strong> errors across <strong>3</strong> records that you need to fix.
+               </p>
+               <p>
+                    <strong>You can also <a href="#" class="govuk-link govuk-link--no-visited-state">download the CSV file showing errors</a>.</strong>
+               </p>
+          </div>
 	  </div>
 
 
 	<div class="govuk-grid-row">
 	    <div class="govuk-grid-column-full">
-		    
+
 		    <h1 class="govuk-heading-l  govuk-!-margin-top-4">Your CSV file has the following errors </h1>
-		    
+
 							<!-- ERROR TABLE 1 -->
 		<div class="govuk-form-group govuk-form-group--error">
 			<table class="govuk-table govuk-!-margin-top-8">
-				<caption class="govuk-table__caption govuk-table__caption--l govuk-!-margin-bottom-4 govuk-error-message"><span class="govuk-visually-hidden">Error:</span>You need to correct the errors in the CSV file and reupload again</span></caption>
+				<caption class="govuk-table__caption govuk-table__caption--s govuk-!-margin-bottom-4 govuk-error-message"><span class="govuk-visually-hidden">Error:</span>You need to correct the errors in the CSV file and reupload again</caption>
 				<thead class="govuk-table__head">
 					<tr class="govuk-table__row">
 					<th scope="col" class="govuk-table__header">Row</th>
@@ -90,29 +87,29 @@
 
 							<!-- END ERROR TABLE 1 -->
 
-							  
+
 			 				 <!-- REUPLOAD CSV FILE -->
 
 			<form action="file-upload-check" method="post" class="govuk-!-margin-top-8" novalidate>
-			
+
 			<legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
 	            <h1 class="govuk-fieldset__heading">
 	              Upload your amended file
 	            </h1>
 	          </legend>
-	              
+
 	          <div class="govuk-form-group  govuk-!-margin-top-6">
 			  <label class="govuk-label" for="file-upload-1">
 			    Choose file
 			  </label>
 			  <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
 			</div>
-				
+
 	          <button class="govuk-button" data-module="govuk-button">
 	            Continue
 	          </button>
 	        </form>
-	        <p class="govuk-body"><a href="index">Cancel</a></p>		    
+	        <p class="govuk-body"><a href="index">Cancel</a></p>
 	    </div>
 	</div>
 

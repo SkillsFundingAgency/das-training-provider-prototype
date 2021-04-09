@@ -13,200 +13,157 @@
 {% block content %}
 
 
-<div class="govuk-width-container">
-	
-	<a href="file-upload" class="govuk-back-link">Back</a>
-	
+<div class="govuk-width-container" id="upload-V3">
+
+     <a href="file-upload" class="govuk-back-link">Back</a>
+
+
+     <div class="govuk-grid-row">
+          <div class="govuk-grid-column-full">
+               <h1 class="govuk-heading-l  govuk-!-margin-top-4">Check and confirm your new apprentices</h1>
+          </div>
+	    <div class="govuk-grid-column-one-third">
+               <span class="govuk-caption-xl">Total apprentices:</span>
+               <h1 class="govuk-heading-xl">30</h1>
+	    </div>
+	    <div class="govuk-grid-column-one-third">
+               <span class="govuk-caption-xl">Total cost:</span>
+               <h1 class="govuk-heading-xl">£30,000</h1>
+	    </div>
+	</div>
 
 	<div class="govuk-grid-row">
 	    <div class="govuk-grid-column-full">
-					    
-		    <h1 class="govuk-heading-l  govuk-!-margin-top-4">Check and confirm your new apprentices</h1>		 
-		    
-	    </div>
-	</div>
-	
-	
-	<div class="govuk-grid-row">
-	    <div class="govuk-grid-column-one-third">
-		    
-		    <span class="govuk-caption-l">Total apprentices:</span>
-			<h1 class="govuk-heading-l">30</h1>
-	
-	    </div>
-	    
-	    <div class="govuk-grid-column-one-third">
-		    		    
-		    <span class="govuk-caption-l">Total cost:</span>
-			<h1 class="govuk-heading-l">£30,000</h1>
-	
-	    </div>
-	</div>
-		
-	
-	<div class="govuk-grid-row">
-	    <div class="govuk-grid-column-two-thirds">
-		    
-		    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
-		    
-		
-	    </div>
-	</div>
-	
-	<div class="govuk-grid-row">
-	    <div class="govuk-grid-column-full">
 
-			 <!-- EMPLOYER 1       -->
+              <!-- <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible"> -->
 
-			      <div class="group-header">
-	                <h2 class="govuk-heading-l group-title">Sainsbury's</h2>
-				  </div>
+               <!-- EMPLOYER 1  -->
+               <div class="group-header">
+                    <h2 class="govuk-heading-l group-title">Sainsbury's</h2>
+               </div>
 
-		<div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
-		<div class="govuk-accordion__section ">
-			<div class="govuk-accordion__section-header">
-			<h2 class="govuk-accordion__section-heading">
-				<span class="govuk-accordion__section-button" id="accordion-default-heading-1">
-				Cohort reference: VJW80P
-				</span>
-			</h2>
-			<p class="govuk-body govuk-!-margin-top-4">Food and Drink: Meat and Poultry Industry Skills, Level: 3</p>
+               <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+                    <div class="govuk-accordion__section ">
+                         <div class="govuk-accordion__section-header">
+                              <h2 class="govuk-accordion__section-heading">
+                                   <span class="govuk-accordion__section-button" id="accordion-default-heading-1">Cohort reference: VJW80P</span>
+                              </h2>
+                              <p class="govuk-body">Food and Drink: Meat and Poultry Industry Skills, Level: 3</p>
+                         </div>
+                         <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                              <table class="govuk-table  govuk-!-margin-bottom-4">
+                                   <thead class="govuk-table__head">
+                                        <tr class="govuk-table__row">
+                                        	<th scope="col" class="govuk-table__header">Name</th>
+                                        	<th scope="col" class="govuk-table__header">Unique learner number</th>
+                                        	<th scope="col" class="govuk-table__header">Date of birth</th>
+                                        	<th scope="col" class="govuk-table__header">Training dates</th>
+                                        	<th scope="col" class="govuk-table__header">Cost</th>
+                                        </tr>
+                                   </thead>
+                                   <tbody>
+                                        <tr class="govuk-table__row">
+                                        	<td class="govuk-table__cell">David Clarke</td>
+                                        	<td class="govuk-table__cell">93849228</td>
+                                        	<td class="govuk-table__cell">10 Mar 1998</td>
+                                        	<td class="govuk-table__cell">Apr 2021 to Jun 2024</td>
+                                        	<td class="govuk-table__cell">£1789</td>
+                                        </tr>
+                                   </tbody>
+                              </table>
+                              <span class="govuk-caption-m govuk-!-margin-bottom-8">Training code: 432-2-1</span>
+                         </div>
+                    </div>
+
+                    <div class="govuk-accordion__section ">
+                         <div class="govuk-accordion__section-header">
+                              <h2 class="govuk-accordion__section-heading">
+                                   <span class="govuk-accordion__section-button" id="accordion-default-heading-2">Cohort: SHZ84L</span>
+                              </h2>
+                              <p class="govuk-body">Food and Drink: Meat and Poultry Industry Skills, Level: 2</p>
+                         </div>
+                         <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                              <!-- <h3 class="govuk-heading-m group-title">Food and Drink: Meat and Poultry Industry Skills, Level: 3</h3> -->
+                              <table class="govuk-table  govuk-!-margin-bottom-4">
+                                   <thead class="govuk-table__head">
+                                        <tr class="govuk-table__row">
+                                        	<th scope="col" class="govuk-table__header">Name</th>
+                                        	<th scope="col" class="govuk-table__header">Unique learner number</th>
+                                        	<th scope="col" class="govuk-table__header">Date of birth</th>
+                                        	<th scope="col" class="govuk-table__header">Training dates</th>
+                                        	<th scope="col" class="govuk-table__header">Cost</th>
+                                        </tr>
+                                   </thead>
+                                   <tbody>
+                                        <tr class="govuk-table__row">
+                                        	<td class="govuk-table__cell">Jack Price</td>
+                                        	<td class="govuk-table__cell">8493847569</td>
+                                        	<td class="govuk-table__cell">10 Mar 1998</td>
+                                        	<td class="govuk-table__cell">May 2021 to Jul 2024</td>
+                                        	<td class="govuk-table__cell">£1789</td>
+                                        </tr>
+                                   </tbody>
+                              </table>
+                              <span class="govuk-caption-m govuk-!-margin-bottom-8">Training code: 432-2-1</span>
+                         </div>
+                    </div>
+               </div>
+               <!-- END EMPLOYER 1 -->
+
+               <!-- EMPLOYER 2 -->
+               <div class="group-header">
+                    <h2 class="govuk-heading-l group-title">Tesco</h2>
+               </div>
+
+			<div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+     			<div class="govuk-accordion__section ">
+          			<div class="govuk-accordion__section-header">
+               			<h2 class="govuk-accordion__section-heading">
+                    			<span class="govuk-accordion__section-button" id="accordion-default-heading-1">Cohort: RL08HS</span>
+               			</h2>
+               			<p class="govuk-body">Food and Drink: Meat and Poultry Industry Skills, Level: 3</p>
+          			</div>
+          			<div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+               			<!-- <h3 class="govuk-heading-m group-title">Food and Drink: Meat and Poultry Industry Skills, Level: 2</h3> -->
+          				<table class="govuk-table  govuk-!-margin-bottom-4">
+          					<thead class="govuk-table__head">
+               					<tr class="govuk-table__row">
+               						<th scope="col" class="govuk-table__header">Name</th>
+               						<th scope="col" class="govuk-table__header">Unique learner number</th>
+               						<th scope="col" class="govuk-table__header">Date of birth</th>
+               						<th scope="col" class="govuk-table__header">Training dates</th>
+               						<th scope="col" class="govuk-table__header">Cost</th>
+               					</tr>
+          					</thead>
+                                   <tbody>
+               					<tr class="govuk-table__row">
+               						<td class="govuk-table__cell">Louise Jones</td>
+               						<td class="govuk-table__cell">9876453209</td>
+               						<td class="govuk-table__cell">6 Oct 2001</td>
+               						<td class="govuk-table__cell">May 2021 to Jul 2024  	</td>
+               						<td class="govuk-table__cell">£1789</td>
+               					</tr>
+               				</tbody>
+               			</table>
+               			<span class="govuk-caption-m govuk-!-margin-bottom-8">Training code: 432-2-1</span>
+
+          			</div>
+     			</div>
+
 			</div>
-			<div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
-					<table class="govuk-table  govuk-!-margin-bottom-4">
-						<thead class="govuk-table__head">
-						<tr class="govuk-table__row">
-							<th scope="col" class="govuk-table__header">Name</th>
-							<th scope="col" class="govuk-table__header">Unique learner number</th>
-							<th scope="col" class="govuk-table__header">Date of birth</th>
-							<th scope="col" class="govuk-table__header">Training dates</th>
-							<th scope="col" class="govuk-table__header">Cost</th>
-						</tr>
-						</thead>
-						<tr class="govuk-table__row">
-							<td class="govuk-table__cell">David Clarke</td>
-							<td class="govuk-table__cell">93849228</td>
-							<td class="govuk-table__cell">10 Mar 1998</td>
-							<td class="govuk-table__cell">Apr 2021 to Jun 2024</td>
-							<td class="govuk-table__cell">£1789</td>
-						</tr>
-					</tbody>
-				</table>
-				<span class="govuk-caption-m govuk-!-margin-bottom-8">Training code: 432-2-1</span>
 
-					
-			</div>
+               <!--  CTA's -->
+
+               <div class="govuk-button-group govuk-!-margin-top-8">
+                    <a class="govuk-button" data-module="govuk-button" href="succsess">Save and send to employers</a>
+               </div>
+               <p class="gov-body govuk-!-margin-bottom-8"><a class="govuk-link" href="index">Cancel</a></p>
+               <!--  END CTA's -->
+
 		</div>
-		<div class="govuk-accordion__section ">
-			<div class="govuk-accordion__section-header">
-			<h2 class="govuk-accordion__section-heading">
-				<span class="govuk-accordion__section-button" id="accordion-default-heading-2">
-					Cohort: SHZ84L
-				</span>
-			</h2>
-			<p class="govuk-body govuk-!-margin-top-4">Food and Drink: Meat and Poultry Industry Skills, Level: 2</p>
-			</div>
-			<div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
-				<h3 class="govuk-heading-m group-title">Food and Drink: Meat and Poultry Industry Skills, Level: 3</h3>
-					<table class="govuk-table  govuk-!-margin-bottom-4">
-						<thead class="govuk-table__head">
-						<tr class="govuk-table__row">
-							<th scope="col" class="govuk-table__header">Name</th>
-							<th scope="col" class="govuk-table__header">Unique learner number</th>
-							<th scope="col" class="govuk-table__header">Date of birth</th>
-							<th scope="col" class="govuk-table__header">Training dates</th>
-							<th scope="col" class="govuk-table__header">Cost</th>
-						</tr>
-						</thead>
-						<tr class="govuk-table__row">
-							<td class="govuk-table__cell">Jack Price</td>
-							<td class="govuk-table__cell">8493847569</td>
-							<td class="govuk-table__cell">10 Mar 1998</td>
-							<td class="govuk-table__cell">May 2021 to Jul 2024</td>
-							<td class="govuk-table__cell">£1789</td>
-						</tr>
-					</tbody>
-				</table>
-				<span class="govuk-caption-m govuk-!-margin-bottom-8">Training code: 432-2-1</span>
-			</div>
-		</div>
-		</div>
-
-         <!-- END EMPLOYER 1 -->
-
-		 <!-- EMPLOYER 2 -->
-
-		 <div class="group-header">
-			<h2 class="govuk-heading-l group-title">Tesco</h2>
-		  </div>
-
-				<div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
-				<div class="govuk-accordion__section ">
-				<div class="govuk-accordion__section-header">
-				<h2 class="govuk-accordion__section-heading">
-				<span class="govuk-accordion__section-button" id="accordion-default-heading-1">
-				Cohort: RL08HS
-				</span>
-				</h2>
-				<p class="govuk-body govuk-!-margin-top-4">Food and Drink: Meat and Poultry Industry Skills, Level: 3</p>
-				</div>
-				<div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
-				<h3 class="govuk-heading-m group-title">Food and Drink: Meat and Poultry Industry Skills, Level: 2</h3>
-					<table class="govuk-table  govuk-!-margin-bottom-4">
-						<thead class="govuk-table__head">
-						<tr class="govuk-table__row">
-							<th scope="col" class="govuk-table__header">Name</th>
-							<th scope="col" class="govuk-table__header">Unique learner number</th>
-							<th scope="col" class="govuk-table__header">Date of birth</th>
-							<th scope="col" class="govuk-table__header">Training dates</th>
-							<th scope="col" class="govuk-table__header">Cost</th>
-						</tr>
-						</thead>
-						<tr class="govuk-table__row">
-							<td class="govuk-table__cell">Louise Jones</td>
-							<td class="govuk-table__cell">9876453209</td>
-							<td class="govuk-table__cell">6 Oct 2001</td>
-							<td class="govuk-table__cell">May 2021 to Jul 2024  	</td>
-							<td class="govuk-table__cell">£1789</td>
-						</tr>
-					</tbody>
-				</table>
-				<span class="govuk-caption-m govuk-!-margin-bottom-8">Training code: 432-2-1</span>
-
-				</div>
-				</div>
-
-				</div>
-				</div>
-
-
-            <!-- END EMPLOYER 2 -->
-
-			<!--  CTA's -->
-			
-			<div class="govuk-button-group govuk-!-margin-top-8">
-			  <a class="govuk-button" data-module="govuk-button" href="succsess">
-			    Save and send to employers
-			  </a>
-			
-			  <!-- <a class="govuk-button govuk-button--secondary" data-module="govuk-button">
-			    Save as draft
-			  </a> -->
-			</div>
-			
-			
-			<p class="gov-body govuk-!-margin-bottom-8"><a class="govuk-link" href="index">Cancel</a></p>
-			
-			
-			<!--  END CTA's -->
-		    
-		    
-	    </div>
-	</div>
-
+          <!-- END EMPLOYER 2 -->
+     </div>
 </div>
-
-
 {% endblock %}
 
 {% endblock %}
