@@ -452,3 +452,26 @@ a.das-navigation__priority-button {
           }
      }
 }
+
+#order-table-one, #order-table-two {
+     thead {
+          tr {
+               th {
+                    text-decoration: underline;
+                    color: $govuk-link-colour;
+               }
+          }
+     }
+}
+
+.icon {
+     display: inline-block;
+     background: red;
+     margin: 0 0.5em -0.2em 0;
+     width: 1em;
+     height: 1em;
+     &.sort {
+          background: url('../images/sort-blue.svg') no-repeat 0% 50%;
+          background-size: contain;
+     }
+}

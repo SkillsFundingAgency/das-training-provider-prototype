@@ -20,7 +20,7 @@
           <div class="govuk-grid-column-full">
 
           <h1 class="govuk-heading-l  govuk-!-margin-top-4">Check and confirm your new apprentices</h1>
-          <p class="govuk-body"><strong>apprentice_upload.csv</strong> file has been uploaded with 0 errors.</p> 
+          <p class="govuk-body"><strong>apprentice_upload.csv</strong> file has been uploaded with 0 errors.</p>
 
           </div>
      </div>
@@ -53,12 +53,12 @@
                     <h2 class="govuk-heading-l group-title">Sainsbury's</h2>
                </div>
 
-               <table class="govuk-table  govuk-!-margin-bottom-8">
+               <table class="govuk-table  govuk-!-margin-bottom-8" id="order-table-one">
                     <thead class="govuk-table__head">
                          <tr class="govuk-table__row">
-                              <th scope="col" class="govuk-table__header">Cohort</th>
-                              <th scope="col" class="govuk-table__header">Standard</th>
-                              <th scope="col" class="govuk-table__header">Apprentices added</th>
+                              <th scope="col" class="govuk-table__header" onclick="sortTableOne(0)"><span class="icon sort"></span>Cohort</th>
+                              <th scope="col" class="govuk-table__header" onclick="sortTableOne(1)"><span class="icon sort"></span>Standard</th>
+                              <th scope="col" class="govuk-table__header" onclick="sortTableOne(2)"><span class="icon sort"></span>Apprentices added</th>
                               <th scope="col" class="govuk-table__header"></th>
                          </tr>
                     </thead>
@@ -95,12 +95,12 @@
                <div class="group-header">
                     <h2 class="govuk-heading-l group-title">Tesco</h2>
                </div>
-               <table class="govuk-table  govuk-!-margin-bottom-8">
+               <table class="govuk-table  govuk-!-margin-bottom-8" id="order-table-two">
                     <thead class="govuk-table__head">
                          <tr class="govuk-table__row">
-                              <th scope="col" class="govuk-table__header">Cohort</th>
-                              <th scope="col" class="govuk-table__header">Standard</th>
-                              <th scope="col" class="govuk-table__header">Apprentices added</th>
+                              <th scope="col" class="govuk-table__header" onclick="sortTableTwo(3)"><span class="icon sort"></span>Cohort</th>
+                              <th scope="col" class="govuk-table__header" onclick="sortTableTwo(4)"><span class="icon sort"></span>Standard</th>
+                              <th scope="col" class="govuk-table__header" onclick="sortTableTwo(5)"><span class="icon sort"></span>Apprentices added</th>
                               <th scope="col" class="govuk-table__header"></th>
                          </tr>
                     </thead>
