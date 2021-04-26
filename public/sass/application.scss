@@ -16,6 +16,7 @@ $govuk-assets-path: '/govuk/assets/';
 
 // Components that aren't in Frontend
 @import "components/cookie-banner";
+@import "components/bulk-upload";
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
@@ -433,26 +434,6 @@ a.das-navigation__priority-button {
      }
 }
 
-#upload-V3 {
-     .group-title {
-          margin: 2em 0 0 0;
-     }
-     .govuk-accordion__section {
-          .govuk-accordion__section-header {
-               // background: govuk-colour("light-grey");
-               padding: 1.5em 0;
-               button {
-                    text-decoration: underline;
-                    margin-bottom: 0.15em;
-               }
-               p {
-                    margin: 0;
-                    color: $govuk-secondary-text-colour;
-               }
-          }
-     }
-}
-  
 .icon {
      display: inline-block;
      background: red;
