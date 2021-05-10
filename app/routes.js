@@ -23,6 +23,15 @@ router.post('/bulk-upload/v2/manual-or-upload', (req, res) => {
 	}
 })
 
-
+//Check and confirm apprentice details
+router.post('/bulk-upload/file-upload-check', (req, res) => {
+    if(req.session.data['bulk-upload-confirm'] == 'details-approve'){
+        res.redirect('success')
+    } else if(req.session.data['bulk-upload-confirm'] == 'details-review'){
+        res.redirect('success-review')
+    } else if(req.session.data['bulk-upload-confirm'] == 'details-save'){
+        res.redirect('draft-apprentices')
+    }
+})
 
 module.exports = router

@@ -13,17 +13,18 @@
 
 
 <div class="govuk-width-container">
-  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <a href="review-cohort-apprentices" class="govuk-back-link">Back</a>
+
+  <form action="review-cohort-apprentices" method="post" novalidate>
 
   <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        
-      <h1 class="govuk-heading-xl">Add apprentice details</h1>
+
+        <h1 class="govuk-heading-xl">Edit apprentice details</h1>
 
         <div class="govuk-inset-text">
-          <p class="govuk-body">You must add the apprentice’s first and last names - fill in as many other fields as you can. You'll be able to return later to make changes or add more information.</p>
-          <p>You can only receive payments for this apprentice if:</p>
+          <p class="govuk-body">You can only receive payments for this apprentice if:</p>
           <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
             <li>
               all the fields have been completed - either by yourself or the employer
@@ -37,43 +38,8 @@
 
         <div class="govuk-form-group ">
           <label class="govuk-label govuk-!-font-weight-bold" for="CourseCode">Employer</label>
-          <span id="course-name-hint" class="govuk-hint">Start typing the name of an employer or choose one from the list</span>
-          <select class="govuk-select govuk-!-width-three-quarters" aria-describedby="course-name-hint" id="CourseCode" name="CourseCode">
-              <option value="">Please select an employer</option>
-    </select>
-      </div>
-
-      <div class="govuk-form-group">
-        <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
-          <label class="govuk-label govuk-!-font-weight-bold" for="Cohort">Cohort reference</label>
-        
-          <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
-            <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
-              <label class="govuk-label govuk-radios__label" for="contact">
-                Add apprentice to an existing cohort
-              </label>
-            </div>
-            <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact">
-              <div class="govuk-form-group">
-                <label class="govuk-label" for="contact-by-email">
-                  Enter cohort reference
-                </label>
-                <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false"></div>
-            </div>
-
-            <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
-              <label class="govuk-label govuk-radios__label" for="contact-2">
-                Create a new cohort <br>
-                <div id="changed-name-hint" class="govuk-hint">
-                  We will automatically create a new cohort reference
-                </div>
-              </label>
-            </div> 
-      
-        </fieldset>
-      </div>
+          <p class="govuk-body">SAINSBURY'S</p>
+        </div>
 
         <fieldset class="govuk-fieldset">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
@@ -205,12 +171,11 @@
   <p class="govuk-body">We'll ask the employer to confirm the <a class="govuk-link" href="https://www.gov.uk/government/publications/using-the-register-of-apprentice-assessment-organisations" target="_blank" title="Opens in a new window">apprentice assessment organisation</a> for this apprentice. We'll do this before the end of the apprenticeship.</p>
 </div>
 
-<div class="govuk-button-group govuk-!-margin-top-8">
-  <a class="govuk-button" data-module="govuk-button" href="review-cohort-apprentices">Add</a>
-</div>
+<button class="govuk-button" data-module="govuk-button">Add</button>
 
-<p class="govuk-body"><a href="#">Cancel</a></p>
+<p class="govuk-body"><a href="review-cohort-apprentices">Cancel</a></p>
 
+</form>
   </main>
 </div>
 {% endblock %}

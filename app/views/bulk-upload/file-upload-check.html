@@ -21,6 +21,7 @@
 
           <h1 class="govuk-heading-l  govuk-!-margin-top-4">Check and confirm your new apprentices</h1>
           <p class="govuk-body"><strong>apprentice_upload.csv</strong> file has been uploaded with 0 errors.</p>
+          <p>If there are any apprentice detail errors, you will need to edit your CSV file and reupload.</p>
 
           </div>
      </div>
@@ -109,21 +110,55 @@
                               <td class="govuk-table__cell">QDY56H</td>
                               <td class="govuk-table__cell">Food and Drink: Meat and Poultry Industry Skills, Level: 3</td>
                               <td class="govuk-table__cell">10</td>
-                              <td class="govuk-table__cell"><a href="#" class="govuk-link">View cohort</a></td>
+                              <td class="govuk-table__cell"><a href="review-cohort" class="govuk-link">View cohort</a></td>
                          </tr>
                     </tbody>
                </table>
                <!-- END EMPLOYER 2 -->
 
-               <!--  CTA's -->
-               <div class="govuk-button-group govuk-!-margin-top-8">
-                    <a class="govuk-button" data-module="govuk-button" href="success">Save and send to employers</a>
-                    <!-- <a class="govuk-button govuk-button--secondary" data-module="govuk-button">
-                    Save as draft
-                    </a> -->
-               </div>
+               <!--  RADIO BUTTONS -->
+               <div class="govuk-form-group">
+
+                    <form method="post">
+
+                    <fieldset class="govuk-fieldset">
+                      <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                        <h1 class="govuk-fieldset__heading">
+                          Choose an option
+                        </h1>
+                      </legend>
+                      <div class="govuk-radios">
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="details-approve" name="bulk-upload-confirm" type="radio" value="details-approve">
+                          <label class="govuk-label govuk-radios__label" for="details-approve">
+                            Approve and send to employer for approval
+                          </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="details-review" name="bulk-upload-confirm" type="radio" value="details-review">
+                          <label class="govuk-label govuk-radios__label" for="details-review">
+                            Send to employer to review or add details
+                          </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="details-save" name="bulk-upload-confirm" type="radio" value="details-save">
+                          <label class="govuk-label govuk-radios__label" for="details-save">
+                            Save but don't send to employer
+                          </label>
+                        </div>
+                      </div>
+                  
+                    </fieldset>
+                  </div>               
+               <!--  END RADIO BUTTONS -->
+
+               <!-- CTA'S -->
+               <button class="govuk-button" data-module="govuk-button">
+                    Save and continue
+               </button>
                <p class="gov-body govuk-!-margin-bottom-8"><a class="govuk-link" href="index">Cancel</a></p>
-               <!--  END CTA's -->
+
+               <!-- END CTA's -->
 
           </div>
 
