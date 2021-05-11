@@ -31,7 +31,8 @@ table#manage-apprenticeships-table {
      position: relative;
      .icon {
           &.search {
-               background: $govuk-link-colour;
+               background: url('../images/search-white.svg') no-repeat 50% 50% $govuk-link-colour;
+               background-size: 1.25em;
                position: absolute;
                right: 0;
                top: 0;
