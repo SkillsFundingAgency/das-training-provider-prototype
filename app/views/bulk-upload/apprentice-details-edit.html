@@ -15,7 +15,7 @@
 <div class="govuk-width-container">
   <a href="review-cohort-apprentices" class="govuk-back-link">Back</a>
 
-  <form action="review-cohort-apprentices" method="post" novalidate>
+  <!-- <form action="review-cohort-apprentices" method="post" novalidate> -->
 
   <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
@@ -171,11 +171,17 @@
   <p class="govuk-body">We'll ask the employer to confirm the <a class="govuk-link" href="https://www.gov.uk/government/publications/using-the-register-of-apprentice-assessment-organisations" target="_blank" title="Opens in a new window">apprentice assessment organisation</a> for this apprentice. We'll do this before the end of the apprenticeship.</p>
 </div>
 
-<button class="govuk-button" data-module="govuk-button">Add</button>
+<!-- <button class="govuk-button" data-module="govuk-button">Save</button><br>
+<button class="govuk-button govuk-button--warning" data-module="govuk-button">Delete</button> -->
+
+<div class="govuk-button-group govuk-!-margin-top-8">
+  <a class="govuk-button" data-module="govuk-button" href="review-cohort-apprentices">Save</a><br>
+  <a class="govuk-button govuk-button--warning" data-module="govuk-button" href="#">Delete</a></button>
+</div>
 
 <p class="govuk-body"><a href="review-cohort-apprentices">Cancel</a></p>
 
-</form>
+<!-- </form> -->
   </main>
 </div>
 {% endblock %}
