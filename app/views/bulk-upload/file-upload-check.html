@@ -21,7 +21,7 @@
 
           <h1 class="govuk-heading-l  govuk-!-margin-top-4">Check and confirm your new apprentices</h1>
           <p class="govuk-body"><strong>apprentice_upload.csv</strong> file has been uploaded with 0 errors.</p>
-          <p>If there are any apprentice detail errors, you will need to edit your CSV file and reupload.</p>
+          <p>If you need to amend an apprentice record,  you will need to make amendments in your CSV file and upload again.</p>
 
           </div>
      </div>
@@ -150,7 +150,7 @@
                         <div class="govuk-radios__item">
                           <input class="govuk-radios__input" id="details-review" name="bulk-upload-confirm" type="radio" value="details-review">
                           <label class="govuk-label govuk-radios__label" for="details-review">
-                            Send to employer to review or add details
+                            Send to employer to review
                           </label>
                         </div>
                         <div class="govuk-radios__item">
@@ -159,6 +159,12 @@
                             Save but don't send to employer
                           </label>
                         </div>
+                        <div class="govuk-radios__item">
+                         <input class="govuk-radios__input" id="details-new-file" name="bulk-upload-confirm" type="radio" value="details-new-file">
+                         <label class="govuk-label govuk-radios__label" for="details-new-file">
+                           Upload an amended file
+                         </label>
+                       </div>
                       </div>
                   
                     </fieldset>
@@ -169,7 +175,7 @@
                <button class="govuk-button" data-module="govuk-button">
                     Save and continue
                </button>
-               <p class="gov-body govuk-!-margin-bottom-8"><a class="govuk-link" href="index">Cancel</a></p>
+               <p class="gov-body govuk-!-margin-bottom-8"><a class="govuk-link" href="index">Cancel and discard the upload</a></p>
 
                <!-- END CTA's -->
 

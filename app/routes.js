@@ -31,7 +31,21 @@ router.post('/bulk-upload/file-upload-check', (req, res) => {
         res.redirect('success-review')
     } else if(req.session.data['bulk-upload-confirm'] == 'details-save'){
         res.redirect('draft-apprentices')
+	} else if(req.session.data['bulk-upload-confirm'] == 'details-new-file'){
+        res.redirect('amended-file')
     }
 })
+
+//Upload amended csv file
+router.post('/bulk-upload/amended-file', (req, res) => {
+	if(req.session.data['new-file'] == 'no'){
+		res.redirect('file-upload-check')
+	} else {
+		res.redirect('file-upload')
+	}
+})
+
+
+
 
 module.exports = router
