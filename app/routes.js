@@ -45,13 +45,7 @@ router.post('/bulk-upload/amended-file', (req, res) => {
 	}
 })
 
-//Upload amended csv file
-router.post('/bulk-upload/discard-file', (req, res) => {
-	if(req.session.data['discard-file'] == 'no'){
-		res.redirect('file-upload-check')
-	} else {
-		res.redirect('index')
-	}
-})
+
+
 
 module.exports = router
