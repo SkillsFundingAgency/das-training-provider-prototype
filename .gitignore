@@ -6,3 +6,4 @@ node_modules/
 /public/stylesheets/unbranded-ie8.css
 /public/stylesheets/application.css
 /public/stylesheets/application-ie8.css
+/lib/extensions/_extensions.scss
