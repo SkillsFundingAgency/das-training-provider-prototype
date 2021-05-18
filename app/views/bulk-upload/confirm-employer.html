@@ -13,7 +13,7 @@
 
 
 <div class="govuk-width-container">
-  <a href="manual-or-upload" class="govuk-back-link">Back</a>
+  <a href="choose-employer" class="govuk-back-link">Back</a>
 
   <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
@@ -24,20 +24,27 @@
         <div class="govuk-form-group">
           <fieldset class="govuk-fieldset">
                <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-                    <h1 class="govuk-fieldset__heading govuk-!-margin-bottom-4">Add apprentice details</h1>
+                    <h1 class="govuk-fieldset__heading govuk-!-margin-bottom-4">Confirm employer</h1>
                </legend>
+
+               <h3 class="govuk-heading-m">SAINSBURY'S</h3>
+               <span class="govuk-caption-m">Account name: SAINSBURY'S<br>
+               Agreement ID: X4JKRY
+               </span>
+
+               <p><h3 class="govuk-heading-s">Is this the employer you'd like to add apprentice details for?</h3></p>
 
           <div class="govuk-radios">
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="existing-cohort" name="manual-add" type="radio" value="existing-cohort">
-              <label class="govuk-label govuk-radios__label" for="existing-cohort">
-                Add to an existing cohort
+              <input class="govuk-radios__input" id="create-cohort-yes" name="create-cohort" type="radio" value="yes">
+              <label class="govuk-label govuk-radios__label" for="create-cohort-yes">
+                Yes, use SAINSBURY'S
               </label>
             </div>
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="new-cohort" name="manual-add" type="radio" value="new-cohort">
-              <label class="govuk-label govuk-radios__label" for="new-cohort">
-                Create a new cohort
+              <input class="govuk-radios__input" id="create-cohort-no" name="create-cohort" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="create-cohort-no">
+                No, choose a different employer
               </label>
             </div>
           </div>
