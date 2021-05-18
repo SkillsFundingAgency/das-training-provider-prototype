@@ -1,16 +1,9 @@
 node_modules/
-/.DS_Store
-/.idea
-public/stylesheets/application-ie8.css
-public/stylesheets/application.css
-*.css
-public/stylesheets/unbranded.css
-public/stylesheets/unbranded-ie8.css
-public/stylesheets/application.css
-public/stylesheets/application-ie8.css
-public/stylesheets/application-ie8.css
-public/stylesheets/application.css
-public/stylesheets/unbranded-ie8.css
-public/stylesheets/unbranded.css
+.DS_Store
+.idea
 
-node_modules/
+/public/stylesheets/unbranded.css
+/public/stylesheets/unbranded-ie8.css
+/public/stylesheets/application.css
+/public/stylesheets/application-ie8.css
+/lib/extensions/_extensions.scss
