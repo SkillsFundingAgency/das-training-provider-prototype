@@ -45,7 +45,7 @@ router.post('/bulk-upload/amended-file', (req, res) => {
 	}
 })
 
-//Upload amended csv file
+//Discard csv file
 router.post('/bulk-upload/discard-file', (req, res) => {
 	if(req.session.data['discard-file'] == 'no'){
 		res.redirect('file-upload-check')
@@ -53,5 +53,25 @@ router.post('/bulk-upload/discard-file', (req, res) => {
 		res.redirect('index')
 	}
 })
+
+//Manually add apprentice details
+router.post('/bulk-upload/manual', (req, res) => {
+	if(req.session.data['manual-add'] == 'existing-cohort'){
+		res.redirect('existing-cohorts')
+	} else {
+		res.redirect('choose-employer')
+	}
+})
+
+//Confirm employer
+router.post('/bulk-upload/confirm-employer', (req, res) => {
+	if(req.session.data['create-cohort'] == 'yes'){
+		res.redirect('apprentice-details-add')
+	} else {
+		res.redirect('choose-employer')
+	}
+})
+
+
 
 module.exports = router
