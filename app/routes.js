@@ -80,6 +80,15 @@ router.post('/bulk-upload/confirm-employer', (req, res) => {
 	}
 })
 
+//Duplicate apprentices
+router.post('/bulk-upload/file-upload-duplicates', (req, res) => {
+	if(req.session.data['duplicate-apprentice'] == 'overwrite'){
+		res.redirect('file-upload-check')
+	} else {
+		res.redirect('file-upload')
+	}
+})
+
 
 
 module.exports = router
