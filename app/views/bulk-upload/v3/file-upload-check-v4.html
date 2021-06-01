@@ -1,0 +1,214 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Bulk uploads prototype - Training provider
+{% endblock %}
+
+
+{% block main %}
+
+{% include "./includes/account-header+nav.html" %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+
+     <a href="file-upload" class="govuk-back-link">Back</a>
+
+
+     <div class="govuk-grid-row">
+          <div class="govuk-grid-column-full">
+               <h1 class="govuk-heading-l  govuk-!-margin-top-4">Check and confirm your new apprentices</h1>
+          </div>
+     </div>
+
+
+     <div class="govuk-grid-row">
+          <div class="govuk-grid-column-one-third">
+               <span class="govuk-caption-l">Total apprentices:</span>
+               <h1 class="govuk-heading-l">9</h1>
+          </div>
+
+          <div class="govuk-grid-column-one-third">
+               <span class="govuk-caption-l">Total cost:</span>
+               <h1 class="govuk-heading-l">£10,000</h1>
+          </div>
+     </div>
+
+	<div class="govuk-grid-row">
+	    <div class="govuk-grid-column-full">
+
+               <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+               <!-- COHORT 1 -->
+               <div class="group-header">
+                    <h2 class="govuk-heading-l group-title">Sainsbury's</h2>
+                    <span class="govuk-body-l"><b>Cohort reference: VJP88E</span>
+                    <span class="govuk-caption-m">Food and Drink: Meat and Poultry Industry Skills, Level: 3</span>
+               </div>
+               <details class="govuk-details" data-module="govuk-details">
+                    <summary class="govuk-details__summary">
+                         <span class="govuk-details__summary-text">View 7 apprentices</span>
+                    </summary>
+                    <div class="govuk-details__text">
+                         <table class="govuk-table  govuk-!-margin-bottom-2">
+                              <thead class="govuk-table__head">
+                                   <tr class="govuk-table__row">
+                                        <th scope="col" class="govuk-table__header">Name</th>
+                                        <th scope="col" class="govuk-table__header">Unique learner number</th>
+                                        <th scope="col" class="govuk-table__header">Date of birth</th>
+                                        <th scope="col" class="govuk-table__header">Training dates</th>
+                                        <th scope="col" class="govuk-table__header">Cost</th>
+                                   </tr>
+                              </thead>
+                              <tbody class="govuk-table__body">
+                                   <tr class="govuk-table__row">
+                                        <td class="govuk-table__cell">Louise James</td>
+                                        <td class="govuk-table__cell">9384922886</td>
+                                        <td class="govuk-table__cell">10 Mar 1998</td>
+                                        <td class="govuk-table__cell">May 2021 to Jul 2024</td>
+                                        <td class="govuk-table__cell">£1200</td>
+                                   </tr>
+                                   <tr class="govuk-table__row">
+                                        <td class="govuk-table__cell">Joe Jones</td>
+                                        <td class="govuk-table__cell">1654387645</td>
+                                        <td class="govuk-table__cell">1 Mar 1999</td>
+                                        <td class="govuk-table__cell">May 2021 to Jul 2024</td>
+                                        <td class="govuk-table__cell">£1200</td>
+                                   </tr>
+                                   <tr class="govuk-table__row">
+                                        <td class="govuk-table__cell">Mark Smith</td>
+                                        <td class="govuk-table__cell">0978645321</td>
+                                        <td class="govuk-table__cell">19 Jan 1998</td>
+                                        <td class="govuk-table__cell">May 2021 to Jul 2024</td>
+                                        <td class="govuk-table__cell">£900</td>
+                                   </tr>
+                                   <tr class="govuk-table__row">
+                                        <td class="govuk-table__cell">David Clarke</td>
+                                        <td class="govuk-table__cell">9864765377</td>
+                                        <td class="govuk-table__cell">11 Apr 2001</td>
+                                        <td class="govuk-table__cell">May 2021 to Jul 2024</td>
+                                        <td class="govuk-table__cell">£1789</td>
+                                   </tr>
+                                   <tr class="govuk-table__row">
+                                        <td class="govuk-table__cell">Connor Fisher</td>
+                                        <td class="govuk-table__cell">9877659763</td>
+                                        <td class="govuk-table__cell">10 Aug 2001</td>
+                                        <td class="govuk-table__cell">May 2021 to Jul 2024</td>
+                                        <td class="govuk-table__cell">£1200</td>
+                                   </tr>
+                                   <tr class="govuk-table__row">
+                                        <td class="govuk-table__cell">Raj Patel</td>
+                                        <td class="govuk-table__cell">4588067944</td>
+                                        <td class="govuk-table__cell">30 Mar 2001</td>
+                                        <td class="govuk-table__cell">May 2021 to Jul 2024</td>
+                                        <td class="govuk-table__cell">£1700</td>
+                                   </tr>
+                                   <tr class="govuk-table__row">
+                                        <td class="govuk-table__cell">Lily Barnes</td>
+                                        <td class="govuk-table__cell">2435775407</td>
+                                        <td class="govuk-table__cell">14 Sep 2001</td>
+                                        <td class="govuk-table__cell">May 2021 to Jul 2024</td>
+                                        <td class="govuk-table__cell">£1789</td>
+                                   </tr>
+                              </tbody>
+                         </table>
+                         <span class="govuk-caption-m">Training code: 432-2-2</span>
+                    </div>
+               </details>
+			<!-- END COHORT 1 -->
+
+			<!-- COHORT 2 -->
+			<span class="govuk-body-l"><b>Cohort reference: CJP88E</span>
+			<span class="govuk-caption-m">Food and Drink: Meat and Poultry Industry Skills, Level: 2</span>
+               <details class="govuk-details" data-module="govuk-details">
+                    <summary class="govuk-details__summary">
+                         <span class="govuk-details__summary-text">View 1 apprentice</span>
+                    </summary>
+                    <div class="govuk-details__text">
+                         <table class="govuk-table  govuk-!-margin-bottom-2">
+                              <thead class="govuk-table__head">
+                                   <tr class="govuk-table__row">
+                                        <th scope="col" class="govuk-table__header">Name</th>
+                                        <th scope="col" class="govuk-table__header">Unique learner number</th>
+                                        <th scope="col" class="govuk-table__header">Date of birth</th>
+                                        <th scope="col" class="govuk-table__header">Training dates</th>
+                                        <th scope="col" class="govuk-table__header">Cost</th>
+                                   </tr>
+                              </thead>
+                              <tbody class="govuk-table__body">
+                                   <tr class="govuk-table__row">
+                                        <td class="govuk-table__cell">Giovanni Russo</td>
+                                        <td class="govuk-table__cell">9384756019</td>
+                                        <td class="govuk-table__cell">10 Mar 1998</td>
+                                        <td class="govuk-table__cell">Apr 2021 to Jun 2024</td>
+                                        <td class="govuk-table__cell">£1200</td>
+                                   </tr>
+                              </tbody>
+                         </table>
+                         <span class="govuk-caption-m">Training code: 432-2-1</span>
+                    </div>
+               </details>
+			<!-- END COHORT 2 -->
+
+			<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+               <!-- EMPLOYER 2 -->
+               <div class="group-header">
+                    <h2 class="govuk-heading-l group-title">Tesco</h2>
+                    <span class="govuk-body-l"><b>Cohort reference: QCP98E</span>
+                    <span class="govuk-caption-m">Food and Drink: Meat and Poultry Industry Skills, Level: 3</span>
+               </div>
+
+			<details class="govuk-details" data-module="govuk-details">
+                    <summary class="govuk-details__summary">
+                         <span class="govuk-details__summary-text">View 1 apprentice</span>
+                    </summary>
+                    <div class="govuk-details__text">
+                         <table class="govuk-table  govuk-!-margin-bottom-2">
+                              <thead class="govuk-table__head">
+                                   <tr class="govuk-table__row">
+                                        <th scope="col" class="govuk-table__header">Name</th>
+                                        <th scope="col" class="govuk-table__header">Unique learner number</th>
+                                        <th scope="col" class="govuk-table__header">Date of birth</th>
+                                        <th scope="col" class="govuk-table__header">Training dates</th>
+                                        <th scope="col" class="govuk-table__header">Cost</th>
+                                   </tr>
+                              </thead>
+                              <tbody class="govuk-table__body">
+                                   <tr class="govuk-table__row">
+                                        <td class="govuk-table__cell">Jack Price</td>
+                                        <td class="govuk-table__cell">1239485791</td>
+                                        <td class="govuk-table__cell">16 Mar 2002</td>
+                                        <td class="govuk-table__cell">May 2021 to Jul 2024</td>
+                                        <td class="govuk-table__cell">£1789</td>
+                                   </tr>
+                              </tbody>
+                         </table>
+                         <span class="govuk-caption-m">Training code: 432-2-3</span>
+
+                    </div>
+               </details>
+
+			<!--  CTA's -->
+               <div class="govuk-button-group govuk-!-margin-top-8">
+                    <a class="govuk-button" data-module="govuk-button" href="succsess">Save and send to employers</a>
+                    <!-- <a class="govuk-button govuk-button--secondary" data-module="govuk-button">
+                    Save as draft
+                    </a> -->
+               </div>
+
+               <p class="gov-body govuk-!-margin-bottom-8"><a class="govuk-link" href="index">Cancel</a></p>
+			<!--  END CTA's -->
+
+
+	    </div>
+	</div>
+
+</div>
+
+
+{% endblock %}
+
+{% endblock %}

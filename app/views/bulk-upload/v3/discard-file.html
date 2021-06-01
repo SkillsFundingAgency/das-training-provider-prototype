@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Bulk uploads prototype - Training provider
+{% endblock %}
+
+
+{% block main %}
+
+{% include "./includes/account-header+nav.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a href="file-upload-check" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper" id="main-content" role="main">
+       <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l govuk-!-margin-bottom-6">
+            <h1 class="govuk-fieldset__heading">
+              Are you sure you want to discard this file?
+            </h1>
+          </legend>
+
+          <form method="post">
+
+          <div class="govuk-radios govuk-radios--inline">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="discard-file-yes" name="discard-file" type="radio" value="yes">
+              <label class="govuk-label govuk-radios__label" for="discard-file-yes">
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="discard-file-no" name="discard-file" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="discard-file-no">
+                No
+              </label>
+            </div>
+          </div>
+      
+        </fieldset>
+      </div>
+
+      <button class="govuk-button" data-module="govuk-button">
+        Save and continue
+   </button>
+
+      </div>
+  </main>
+</div>
+{% endblock %}
+
+{% endblock %}
