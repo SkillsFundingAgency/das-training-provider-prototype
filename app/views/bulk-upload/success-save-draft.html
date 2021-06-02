@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Bulk uploads prototype - Training provider
+{% endblock %}
+
+
+{% block main %}
+
+{% include "../includes/account-header+nav.html" %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-panel govuk-panel--confirmation">
+          <h1 class="govuk-panel__title">
+            New apprentices saved successfully
+          </h1>
+        </div>
+
+        <p class="govuk-body">You can find the apprentice details in <a href="#" class="govuk-link">your drafts</a>. You can approve and send to the employer to approve from here.</p>
+
+        <h2 class="govuk-heading-m">What happens next</h2>
+
+        <ul class="govuk-list">
+          <li><a href="index" class="govuk-link">Go to dashboard</a></li>
+          <li><a href="manual-or-upload" class="govuk-link">Add more apprentices</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}
+
+{% endblock %}

@@ -38,7 +38,7 @@ router.post('/bulk-upload/file-upload-check', (req, res) => {
     } else if(req.session.data['bulk-upload-confirm'] == 'details-review'){
         res.redirect('success-review')
     } else if(req.session.data['bulk-upload-confirm'] == 'details-save'){
-        res.redirect('draft-apprentices')
+        res.redirect('success-save-draft')
 	} else if(req.session.data['bulk-upload-confirm'] == 'details-new-file'){
         res.redirect('amended-file')
     }
@@ -58,7 +58,7 @@ router.post('/bulk-upload/discard-file', (req, res) => {
 	if(req.session.data['discard-file'] == 'no'){
 		res.redirect('file-upload-check')
 	} else {
-		res.redirect('index')
+		res.redirect('success-discard-file')
 	}
 })
 
