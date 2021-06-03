@@ -19,14 +19,9 @@
 	<div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="govuk-error-summary">
           <h2 class="govuk-error-summary__title" id="error-summary-title">There is a problem</h2>
           <div class="govuk-error-summary__body">
-               <!-- <ul class="govuk-list govuk-error-summary__list"> -->
                <span id="file-error" class="govuk-error-message">
                     <span class="govuk-visually-hidden">Error:</span> The file could not be uploaded because it contains errors. No records have been uploaded.
                </span>
-               <!-- <li>
-               <a href="#passport-issued-error">We’ve found some errors in your CSV file. You’ll need to fix them and upload it again.</a>
-               </li> -->
-               <!-- </ul> -->
                <p>
                     There are <strong>4</strong> errors across <strong>3</strong> records that you need to fix.
                </p>
@@ -83,15 +78,12 @@
 					</tr>
 				</tbody>
 				</table>
-				<!-- <a href="#" class="govuk-link govuk-link--no-visited-state govuk-body">View all 12 rows with errors</a> -->
 
 		</div>
+			<!-- END ERROR TABLE 1 -->
 
 
-							<!-- END ERROR TABLE 1 -->
-
-
-			 				 <!-- REUPLOAD CSV FILE -->
+			<!-- REUPLOAD CSV FILE -->
 			<form action="file-upload-check" method="post" class="govuk-!-margin-top-8" novalidate>
 
 			<legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
@@ -100,15 +92,21 @@
 	            </h1>
 	          </legend>
 
-	          <div class="govuk-form-group  govuk-!-margin-top-6">
-			  <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
-			</div>
-
+			  <div class="govuk-form-group govuk-!-margin-top-6">
+				<label class="govuk-label" for="file-upload-1">
+				  Your CSV file should not be larger than XXmb
+				</label>
+				<input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+			  </div>			    
+             <!-- END REUPLOAD CSV FILE -->
+			  
+			 <!-- CTA -->
 			<div class="govuk-button-group govuk-!-margin-top-6">
 				<a class="govuk-button" data-module="govuk-button" href="file-upload-duplicates">Continue</a>
 		   </div>
 		   <p class="gov-body govuk-!-margin-bottom-8"><a class="govuk-link" href="index">Cancel</a></p>
-			
+			<!-- END CTA -->
+
 	    </div>
 	</div>
 
