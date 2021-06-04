@@ -7,7 +7,7 @@
 
 {% block main %}
 
-{% include "../includes/account-header+nav.html" %}
+{% include "includes/account-header+nav.html" %}
 
 {% block content %}
 
@@ -34,11 +34,18 @@
 				<tbody class="govuk-table__body">
 				  <tr class="govuk-table__row">
 					<td class="govuk-table__cell">SAINSBURY'S</td>
-					<td class="govuk-table__cell">SAINSBURY'S</td>
+					<td class="govuk-table__cell">SAINSBURY'S (Levy)</td>
 					<td class="govuk-table__cell">X4JKRY</td>
 					<td class="govuk-table__cell"><a href="confirm-employer">Select</a></td>
 				  </tr>
-	  
+				  <tbody class="govuk-table__body">
+					<tr class="govuk-table__row">
+					  <td class="govuk-table__cell">SAINSBURY'S</td>
+					  <td class="govuk-table__cell">SAINSBURY'S (Non-Levy)</td>
+					  <td class="govuk-table__cell">X4JKRY</td>
+					  <td class="govuk-table__cell"><a href="confirm-employer-non-levy">Select</a></td>
+					</tr>
+  
 				  </tr>
 				</tbody>
 			  </table>		

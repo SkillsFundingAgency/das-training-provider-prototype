@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Bulk uploads prototype - Training provider
+{% endblock %}
+
+
+{% block main %}
+
+{% include "includes/account-header+nav.html" %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+  <a href="confirm-employer-non-levy" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <form method="post">
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+               <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                    <h1 class="govuk-fieldset__heading govuk-!-margin-bottom-4">Choose a reservation</h1>
+               </legend>
+
+               <h2 class="govuk-heading-m">Which reservation would you like to use?</h2>
+
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="existing-cohort" name="manual-add" type="radio" value="existing-cohort">
+              <label class="govuk-label govuk-radios__label" for="existing-cohort">
+                <strong>Advanced carpentry and joinery - Level 3 starting between Jun 2021 to Aug 2021</strong><br>
+                <span class="govuk-caption-m">Created in May 2021</span>
+              </label>
+            </div>
+            <div class="govuk-radios__divider">or</div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="new-cohort" name="manual-add" type="radio" value="new-cohort">
+              <label class="govuk-label govuk-radios__label" for="new-cohort">
+                <strong>Create a new reservation</strong>
+              </label>
+            </div>
+          </div>
+      
+        </fieldset>
+      </div>
+      
+
+      <button class="govuk-button" data-module="govuk-button">
+        Continue
+      </button>
+
+  </main>
+</div>
+{% endblock %}
+
+{% endblock %}

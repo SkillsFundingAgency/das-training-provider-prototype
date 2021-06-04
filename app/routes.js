@@ -9,7 +9,7 @@ const router = express.Router()
 //CSV upload or manual
 router.post('/bulk-upload/manual-or-upload', (req, res) => {
 	if(req.session.data['add-apprentice-option'] == 'added-manually'){
-		res.redirect('manual')
+		res.redirect('manual/manual')
 	} else {
 		res.redirect('file-upload')
 	}
@@ -62,8 +62,19 @@ router.post('/bulk-upload/discard-file', (req, res) => {
 	}
 })
 
+//Duplicate apprentices
+router.post('/bulk-upload/file-upload-duplicates', (req, res) => {
+	if(req.session.data['duplicate-apprentice'] == 'remove'){
+		res.redirect('file-upload')
+	} else {
+		res.redirect('file-upload-check')
+	}
+})
+
+//MANUAL UPLOADS
+
 //Manually add apprentice details
-router.post('/bulk-upload/manual', (req, res) => {
+router.post('/bulk-upload/manual/manual', (req, res) => {
 	if(req.session.data['manual-add'] == 'existing-cohort'){
 		res.redirect('existing-cohorts')
 	} else {
@@ -71,8 +82,8 @@ router.post('/bulk-upload/manual', (req, res) => {
 	}
 })
 
-//Confirm employer
-router.post('/bulk-upload/confirm-employer', (req, res) => {
+//Confirm employer - Levy
+router.post('/bulk-upload/manual/confirm-employer', (req, res) => {
 	if(req.session.data['create-cohort'] == 'yes'){
 		res.redirect('apprentice-details-add')
 	} else {
@@ -80,15 +91,14 @@ router.post('/bulk-upload/confirm-employer', (req, res) => {
 	}
 })
 
-//Duplicate apprentices
-router.post('/bulk-upload/file-upload-duplicates', (req, res) => {
-	if(req.session.data['duplicate-apprentice'] == 'overwrite'){
-		res.redirect('file-upload-check')
+//Confirm employer - Non-levy
+router.post('/bulk-upload/manual/confirm-employer-non-levy', (req, res) => {
+	if(req.session.data['create-cohort-non-levy'] == 'yes'){
+		res.redirect('choose-reservation')
 	} else {
-		res.redirect('file-upload')
+		res.redirect('choose-employer')
 	}
 })
-
 
 
 module.exports = router
