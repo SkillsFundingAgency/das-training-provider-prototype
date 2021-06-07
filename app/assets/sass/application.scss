@@ -15,6 +15,7 @@ $govuk-assets-path: '/govuk/assets/';
 @import "patterns/task-list";
 @import "patterns/related-items";
 @import "patterns/manage-apprenticeships";
+@import "patterns/apprentice-requests";
 
 // Components that aren't in Frontend
 @import "components/cookie-banner";
@@ -447,3 +448,4 @@ a.das-navigation__priority-button {
           background-size: contain;
      }
 }
+

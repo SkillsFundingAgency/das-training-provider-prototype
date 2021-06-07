@@ -1,0 +1,31 @@
+.das-cards {    
+display: flex ;
+flex-wrap: wrap;
+
+  .das-card {
+    &:nth-of-type(even) {
+      margin-right: 0;
+ }
+
+    background: #4c2c92; 
+    width: 48%;
+
+    flex-direction: column;
+    color: white;
+    text-decoration: none;
+    display: block;
+
+    font-size: 24px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    box-sizing: border-box;
+
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    
+  }
+ 
+}
