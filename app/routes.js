@@ -9,7 +9,7 @@ const router = express.Router()
 //CSV upload or manual
 router.post('/bulk-upload/manual-or-upload', (req, res) => {
 	if(req.session.data['add-apprentice-option'] == 'added-manually'){
-		res.redirect('manual/manual')
+		res.redirect('manual-journey/manual')
 	} else {
 		res.redirect('file-upload')
 	}
@@ -74,7 +74,7 @@ router.post('/bulk-upload/file-upload-duplicates', (req, res) => {
 //MANUAL UPLOADS
 
 //Manually add apprentice details
-router.post('/bulk-upload/manual/manual', (req, res) => {
+router.post('/bulk-upload/manual-journey/manual', (req, res) => {
 	if(req.session.data['manual-add'] == 'existing-cohort'){
 		res.redirect('existing-cohorts')
 	} else {
@@ -83,7 +83,7 @@ router.post('/bulk-upload/manual/manual', (req, res) => {
 })
 
 //Confirm employer - Levy
-router.post('/bulk-upload/manual/confirm-employer', (req, res) => {
+router.post('/bulk-upload/manual-journey/confirm-employer', (req, res) => {
 	if(req.session.data['create-cohort'] == 'yes'){
 		res.redirect('apprentice-details-add')
 	} else {
@@ -92,7 +92,7 @@ router.post('/bulk-upload/manual/confirm-employer', (req, res) => {
 })
 
 //Confirm employer - Non-levy
-router.post('/bulk-upload/manual/confirm-employer-non-levy', (req, res) => {
+router.post('/bulk-upload/manual-journey/confirm-employer-non-levy', (req, res) => {
 	if(req.session.data['create-cohort-non-levy'] == 'yes'){
 		res.redirect('choose-reservation')
 	} else {
