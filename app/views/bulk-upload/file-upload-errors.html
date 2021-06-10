@@ -23,7 +23,7 @@
                     <span class="govuk-visually-hidden">Error:</span> The file could not be uploaded because it contains errors. No records have been uploaded.
                </span>
                <p>
-                    There are <strong>4</strong> errors across <strong>3</strong> records that you need to fix.
+                    There are <strong>7</strong> errors across <strong>6</strong> records that you need to fix.
                </p>
                <p>
                     <strong>You can also <a href="#" class="govuk-link govuk-link--no-visited-state">download the CSV file showing errors</a>.</strong>
@@ -45,7 +45,7 @@
 					<tr class="govuk-table__row">
 					<th scope="col" class="govuk-table__header">Row</th>
 					<th scope="col" class="govuk-table__header">Employer</th>
-					<th scope="col" class="govuk-table__header">Unique learner number</th>
+					<th scope="col" class="govuk-table__header">Unique learner number (ULN)</th>
 					<th scope="col" class="govuk-table__header">Name</th>
 					<th scope="col" class="govuk-table__header">Errors</th>
 					</tr>
@@ -70,8 +70,30 @@
 					<td class="govuk-table__cell">TESCO</td>
 					<td class="govuk-table__cell">872635447</td>
 					<td class="govuk-table__cell">David Clarke</td>
-					<td class="govuk-table__cell">You must enter a valid <strong>unique learner number</strong></td>
+					<td class="govuk-table__cell">You must enter a valid <strong>ULN</strong></td>
 					</tr>
+					<tr class="govuk-table__row">
+						<th scope="row" class="govuk-table__header">13</th>
+						<td class="govuk-table__cell">TESCO</td>
+						<td class="govuk-table__cell">972635447</td>
+						<td class="govuk-table__cell">Anish Patel</td>
+						<td class="govuk-table__cell">This <strong>ULN</strong> is already in cohort ABC123CD. You need to amend or remove duplicates from either the CSV or the cohort</td>
+						</tr>
+						<tr class="govuk-table__row">
+							<th scope="row" class="govuk-table__header">32</th>
+							<td class="govuk-table__cell">TESCO</td>
+							<td class="govuk-table__cell">762635447</td>
+							<td class="govuk-table__cell">Annabelle Howard</td>
+							<td class="govuk-table__cell">You cannot add details to cohort ABC123CD. You need to remove or amend the <strong>cohort reference</strong></td>
+							</tr>
+							<tr class="govuk-table__row">
+								<th scope="row" class="govuk-table__header">33</th>
+								<td class="govuk-table__cell">TESCO</td>
+								<td class="govuk-table__cell">772635447</td>
+								<td class="govuk-table__cell">Jack Price</td>
+								<td class="govuk-table__cell">The employer has exceeded their <strong>maximum reservations</strong>. You need to delete an unused reservation to continue</td>
+								</tr>
+	
 				</tbody>
 				</table>
 
