@@ -1,0 +1,155 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Bulk uploads prototype - Training provider
+{% endblock %}
+
+
+{% block main %}
+
+{% include "includes/account-header+nav.html" %}
+
+{% block content %}
+
+<style>
+	
+@media (min-width: 641px) {
+
+	.boxes {
+	    display: flex;
+	    flex-wrap: wrap;
+	    margin: 0 -15px;
+	}
+	
+	.box {
+	    margin: 0 15px;
+	    width: calc(50% - 30px);
+	}
+
+}
+
+.box {
+    box-sizing: border-box;
+    border-bottom: 1px solid #bfc1c3;
+}
+
+	
+</style>
+
+<div class="govuk-width-container">
+	
+
+	<div class="govuk-grid-row">
+	    <div class="govuk-grid-column-full">
+		              
+	        <h1 class="govuk-heading-xl govuk-!-margin-bottom-1">EDUC8 TRAINING (ENGLAND) LIMITED</h1>
+	        <p class="govuk-caption-m govuk-!-font-weight-bold">UKPRN: 10005310</p>
+	        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+	    </div>
+	</div>
+
+
+	<div class="govuk-grid-row">
+	    <div class="govuk-grid-column-two-thirds">
+	
+	        <div class="boxes">
+		        
+                
+                <div class="box">
+                    <h2 class="heading-medium">
+                        <a href="../manual-or-upload">Add new apprentices</a>
+                    </h2>
+                    <p>You can add manually or upload a file containing 1 or more apprentices for 1 or more employers.</p>
+                </div>
+                
+                 <div class="box">
+	                <h2 class="heading-medium">
+	                    <a href="#">Manage your apprentices</a>
+	                </h2>
+	                <p>View and update approved apprentice records.</p>
+	            </div>
+	            
+                
+                <!-- <div class="box">
+                    <h2 class="heading-medium">
+                        <a href="#">Create a cohort</a>
+                    </h2>
+                    <p>Create new cohorts on behalf of an employer.</p>
+                </div> -->
+                
+                <div class="box">
+	                <h2 class="heading-medium">
+	                    <a href="apprentice-requests">Apprentice requests</a>
+	                </h2>
+	                <p>Review, edit and approve apprentices.</p>
+	            </div>
+	
+	            <div class="box">
+	                <h2 class="heading-medium">
+	                    <a href="#">Get funding for non-levy employers</a>
+	                </h2>
+	                <p>Secure funding for a non-levy employer to train an apprentice.</p>
+	            </div>
+	
+	            
+	
+	            <div class="box">
+	                <h2 class="heading-medium">
+	                    <a href="#">Manage your funding reserved for non-levy employers</a>
+	                </h2>
+	                <p>Add apprentice information to funding you have already reserved for non-levy employers.</p>
+	            </div>
+	
+	           
+	
+	            <div class="box">
+	                <h2 class="heading-medium">
+	                    <a href="#">Recruit apprentices</a>
+	                </h2>
+	                <p>Create a vacancy to recruit an apprentice and manage applications.</p>
+	            </div>
+	
+	            <div class="box">
+	                <h2 class="heading-medium">
+	                    <a href="#">Organisations and agreements</a>
+	                </h2>
+	                <p>Find and view organisations and their agreement IDs.</p>
+	            </div>
+	            
+	            <div class="box">
+	                <h2 class="heading-medium">
+	                    <a href="#">Set up employer account</a>
+	                </h2>
+	                <p>Start setting up an apprenticeship service account for an employer</p>
+	                <p>
+	                    <a href="#">View invited employers</a>
+	                </p>
+	            </div>
+	        </div>
+	    </div>
+	
+	</div>
+
+
+	<div class="govuk-grid-row">
+	    <div class="govuk-grid-column-two-thirds">
+		    
+	        <h3 class="govuk-heading-m  govuk-!-margin-top-8">Instructions for the apprentices' employer</h3>
+	        <p class="govuk-body">Employers need to <a href="https://www.gov.uk/guidance/manage-apprenticeship-funds" target="_blank" title="Register to manage their apprenticeship funds">register to manage their apprenticeship funds</a>. </p>
+	        <p class="govuk-body">Once they've registered they need to:</p>
+	        <ol class="govuk-list govuk-list--number  govuk-!-margin-bottom-8">
+	            <li>Add the PAYE schemes that the apprentices will be paid through.</li>
+	            <li>Add the employer organisations that will contract with the training provider.</li>
+	            <li>Accept agreements for their organisations so that they can spend levy funds.</li>
+	            <li>Add apprentices to their account so they can authorise payments to you. </li>
+	        </ol>
+	    </div>
+	    
+	</div>
+
+
+</div>
+
+{% endblock %}
+
+{% endblock %}
