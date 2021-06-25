@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Confirm apprentice deletion
+{% endblock %}
+
+
+{% block main %}
+
+{% include "includes/account-header+nav.html" %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Cancel and go back</a>
+
+  <!-- <form action="review-cohort-apprentices" method="post" novalidate> -->
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl">Confirm apprentice deletion</h1>
+
+        <h2 class="govuk-heading-l govuk-!-margin-bottom-0">Louise James</h2>
+        <span class="govuk-caption-l govuk-!-font-size-19"><strong>13 Jan 2000</strong></span>
+
+
+        <h3 class="govuk-heading-m">Are you sure you want to delete the record for Louise James?</h3>
+
+<div class="govuk-button-group govuk-!-margin-top-8">
+  <a class="govuk-button" data-module="govuk-button" href="#">Continue</a><br>
+</div>
+
+<!-- </form> -->
+  </main>
+</div>
+{% endblock %}
+
+{% endblock %}
