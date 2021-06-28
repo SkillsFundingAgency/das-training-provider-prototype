@@ -101,4 +101,35 @@ router.post('/bulk-upload/manual-journey/confirm-employer-non-levy', (req, res) 
 })
 
 
+//PAS APPROVE APPRENTICE DETAILS PAGE
+
+//Ready for approval
+router.post('/cohort/index', (req, res) => {
+	if(req.session.data['send-employer'] == 'send-review'){
+		res.redirect('confirmation-review')
+	} else {
+		res.redirect('confirmation-approve')
+	}
+})
+
+//Ready for approval
+router.post('/cohort/apprentices-0', (req, res) => {
+	if(req.session.data['send-employer'] == 'no'){
+		res.redirect('apprentice-requests')
+	} else {
+		res.redirect('confirmation-review')
+	}
+})
+
+//Warnings page
+router.post('/cohort/warning', (req, res) => {
+	if(req.session.data['send-employer'] == 'no'){
+		res.redirect('apprentice-requests')
+	} else {
+		res.redirect('confirmation-review')
+	}
+})
+
+
+
 module.exports = router
