@@ -1,0 +1,124 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Bulk uploads prototype - Training provider
+{% endblock %}
+
+
+{% block main %}
+
+{% include "./includes/account-header+nav.html" %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+	
+	<a href="file-upload-check" class="govuk-back-link">Back</a>
+	
+
+	<div class="govuk-grid-row">
+	    <div class="govuk-grid-column-full">
+					    
+		    <h1 class="govuk-heading-xl  govuk-!-margin-top-4">Review apprentices</h1>		 
+		    
+	    </div>
+	</div>
+	
+		
+	
+	<div class="govuk-grid-row">
+	    <div class="govuk-grid-column-two-thirds">
+		    		    
+		    <!-- <h2 class="govuk-heading-l">Summary</h2> -->
+		    		    
+		    <dl class="govuk-summary-list govuk-summary-list">
+			  <div class="govuk-summary-list__row">
+			    <dt class="govuk-summary-list__key">
+			      Employer
+			    </dt>
+			    <dd class="govuk-summary-list__value">
+			      SAINSBURY'S
+			    </dd>
+			  </div>
+			  <div class="govuk-summary-list__row">
+			    <dt class="govuk-summary-list__key">
+			      Total apprentices
+			    </dt>
+			    <dd class="govuk-summary-list__value">
+			      2
+			    </dd>
+			  </div>
+			  <div class="govuk-summary-list__row">
+			    <dt class="govuk-summary-list__key">
+			      Total cost
+			    </dt>
+			    <dd class="govuk-summary-list__value">
+			      £2,500
+			    </dd>
+			  </div>
+			</dl>
+
+		</div>
+	</div>
+	
+
+	<div class="govuk-grid-row">
+	    <div class="govuk-grid-column-full">
+
+			<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+			
+			<div class="group-header">
+				<h2 class="govuk-heading-l group-title govuk-!-margin-top-8">Apprentice details</h2>
+			</div>
+			
+			
+			  <table class="govuk-table">
+			  <thead class="govuk-table__head">
+				<tr class="govuk-table__row">
+				  <th scope="col" class="govuk-table__header">Name</th>
+				  <th scope="col" class="govuk-table__header">Apprenticeship training course</th>
+				  <th scope="col" class="govuk-table__header">Unique learner number</th>
+				  <th scope="col" class="govuk-table__header">Date of birth</th>
+				  <th scope="col" class="govuk-table__header">Training dates</th>
+				  <th scope="col" class="govuk-table__header">Cost</th>
+				  <!-- <th scope="col" class="govuk-table__header"></th> -->
+				</tr>
+			  </thead>
+			  <tbody class="govuk-table__body govuk-!-font-size-16">
+				<tr class="govuk-table__row">
+				  <td class="govuk-table__cell">Louise James</td>
+				  <td class="govuk-table__cell">Food and Drink: Meat and Poultry Industry Skills, Level: 4</td>
+				  <td class="govuk-table__cell">9384922898</td>
+				  <td class="govuk-table__cell">13 Jan 2000</td>
+				  <td class="govuk-table__cell">Jan 2021 to Jul 2022</td>
+				  <td class="govuk-table__cell">£1,250</td>
+				  <!-- <td class="govuk-table__cell"><a href="#">Edit</a></td> -->
+				</tr>
+				<tbody class="govuk-table__body govuk-!-font-size-16">
+				<tr class="govuk-table__row">
+					<td class="govuk-table__cell">Mark Smith</td>
+					<td class="govuk-table__cell">Abattoir worker, Level: 2</td>
+					<td class="govuk-table__cell">6493849228</td>
+					<td class="govuk-table__cell">7 Apr 1999</td>
+					<td class="govuk-table__cell">Jan 2021 to Jul 2022</td>
+					<td class="govuk-table__cell">£1,250</td>
+					<!-- <td class="govuk-table__cell"><a href="#">Edit</a></td> -->
+					</tr>
+	
+				</tr>
+			  </tbody>
+			</table>		
+	    </div>
+	</div>
+
+	
+	
+	<a href="file-upload-check" class="govuk-back-link govuk-!-margin-bottom-6">Back</a>
+
+</div>
+
+
+{% endblock %}
+
+{% endblock %}

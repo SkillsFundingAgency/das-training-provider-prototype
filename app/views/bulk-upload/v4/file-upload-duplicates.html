@@ -1,0 +1,124 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Bulk uploads prototype - Training provider
+{% endblock %}
+
+
+{% block main %}
+
+{% include "./includes/account-header+nav.html" %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+
+	<a href="file-upload" class="govuk-back-link">Back</a>
+
+	<div class="govuk-grid-row govuk-form-group">
+	    <div class="govuk-grid-column-full">
+
+			<h1 class="govuk-heading-l  govuk-!-margin-top-4">We've found duplicate apprentice records</h1>
+
+			<div class="govuk-warning-text">
+				<span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+				<strong class="govuk-warning-text__text">
+				  <span class="govuk-warning-text__assistive">Warning</span>
+				  There are 3 duplicate entries in your apprentice_upload.csv file.
+				</strong>
+			  </div>
+
+							<!-- TABLE 1 -->
+		<div class="govuk-form-group">
+			<table class="govuk-table ">
+				<thead class="govuk-table__head">
+					<tr class="govuk-table__row">
+					<th scope="col" class="govuk-table__header">Row</th>
+					<th scope="col" class="govuk-table__header">Name</th>
+					<th scope="col" class="govuk-table__header">Date of birth</th>
+					<th scope="col" class="govuk-table__header">Unique learner number</th>
+					<th scope="col" class="govuk-table__header">Start date</th>
+					<th scope="col" class="govuk-table__header">Employer</th>
+					</tr>
+				</thead>
+				<tbody class="govuk-table__body">
+					<tr class="govuk-table__row">
+					<th scope="row" class="govuk-table__header">12</th>
+					<td class="govuk-table__cell">Louise James</td>
+					<td class="govuk-table__cell">13 Jun 2000</td>
+					<td class="govuk-table__cell">93849228</td>
+					<td class="govuk-table__cell">12 Jul 2021</td>
+					<td class="govuk-table__cell">SAINSBURY'S</td>
+					</tr>
+					<tr class="govuk-table__row">
+					<th scope="row" class="govuk-table__header">23</th>
+					<td class="govuk-table__cell">Mark Smith</td>
+					<td class="govuk-table__cell">23 Nov 2002</td>
+					<td class="govuk-table__cell">98849263</td>
+					<td class="govuk-table__cell">12 Jul 2021</td>
+					<td class="govuk-table__cell">SAINSBURY'S</td>
+					</tr>
+					<tr class="govuk-table__row">
+					<th scope="row" class="govuk-table__header">64</th>
+					<td class="govuk-table__cell">David Clarke</td>
+					<td class="govuk-table__cell">13 Nov 2002</td>
+					<td class="govuk-table__cell">99684928</td>
+					<td class="govuk-table__cell">12 Jul 2021</td>
+					<td class="govuk-table__cell">TESCO</td>
+					</tr>
+				</tbody>
+				</table>
+		</div>
+
+		        <!-- END TABLE 1 -->
+
+				<!-- RADIO BUTTONS -->
+		<div class="govuk-form-group govuk-!-margin-bottom-6">
+
+			<form method="post">
+				
+			<fieldset class="govuk-fieldset">
+			  <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+				<h2 class="govuk-fieldset__heading govuk-!-margin-top-6">
+				  What do you want to do?
+				</h2>
+			  </legend>
+			  <div class="govuk-radios">
+				<div class="govuk-radios__item">
+				  <input class="govuk-radios__input" id="duplicate-overwrite" name="duplicate-apprentice" type="radio" value="overwrite">
+				  <label class="govuk-label govuk-radios__label" for="duplicate-overwrite">
+					Replace the existing apprentice details with the CSV file upload details
+				  </label>
+				</div>
+				<div class="govuk-radios__item">
+				  <input class="govuk-radios__input" id="duplicate-remove" name="duplicate-apprentice" type="radio" value="remove">
+				  <label class="govuk-label govuk-radios__label" for="duplicate-remove">
+					Remove apprentices from the CSV file and upload again
+				  </label>
+				</div>
+			  </div>
+		  
+			</fieldset>
+		  </div>
+
+		  <!-- END RADIO BUTTON -->
+
+		  <!-- CTA -->
+
+		  <button class="govuk-button" data-module="govuk-button">
+			Continue
+	      </button>
+	      <p class="gov-body govuk-!-margin-bottom-8"><a class="govuk-link" href="index">Cancel</a></p>
+
+		  <!-- END CTA -->
+	</form>
+	    </div>
+	</div>
+
+</div>
+
+
+{% endblock %}
+
+{% endblock %}
