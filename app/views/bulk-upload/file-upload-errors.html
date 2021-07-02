@@ -36,9 +36,14 @@
 
 		    <h1 class="govuk-heading-l  govuk-!-margin-top-4">Your CSV file has the following errors </h1>
 
-			<p>
-				The file could not be uploaded because it contains errors. No records have been uploaded.
-		   </p>
+			<div class="govuk-warning-text">
+				<span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+				<strong class="govuk-warning-text__text">
+				  <span class="govuk-warning-text__assistive">Warning</span>
+				  The file could not be uploaded because it contains errors. No records have been uploaded.
+				</strong>
+			  </div>
+		   
 
 							<!-- ERROR TABLE 1 -->
 		<div class="govuk-form-group govuk-form-group--error">
@@ -69,7 +74,8 @@
 					<td class="govuk-table__cell">SAINSBURY'S</td>
 					<td class="govuk-table__cell">978645372</td>
 					<td class="govuk-table__cell">Mark Smith</td>
-					<td class="govuk-table__cell">The <strong>start date</strong> overlaps with existing training dates for the same apprentice<br>The <strong>end date</strong> overlaps with existing training dates for the same apprentice</td>
+					<td class="govuk-table__cell">The <strong>start date</strong> overlaps with existing training dates for the same apprentice<br>
+						The <strong>end date</strong> overlaps with existing training dates for the same apprentice</td>
 					</tr>
 					<tr class="govuk-table__row">
 					<th scope="row" class="govuk-table__header">3</th>
