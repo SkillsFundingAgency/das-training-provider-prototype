@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Bulk uploads prototype - Training provider
+{% endblock %}
+
+
+{% block main %}
+
+{% include "../includes/account-header+nav.html" %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+	
+  <a href="manual-or-upload" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form action="file-upload" method="post" novalidate>
+			
+          <h1 class="govuk-heading-xl">Using an upload file</h1>
+
+          <h2 class="govuk-heading-m">Before you start</h2>
+
+          <p class="govuk-body">You will need to know the agreement ID you have with the employer; this can be found on your <a href="organisations-and-agreements" class="govuk-link govuk-link--no-visited-state">Organisation and agreements page</a>.
+          </p>
+
+          <h2 class="govuk-heading-m">Upload a CSV file</h2>
+
+          <p class="govuk-body">You can:</p>
+          <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+            <li>use your learning management system (LMS) to create a CSV file to upload 1 or more apprentices for 1 or more employers at the same time. If you don't use a LMS then you can use our <a href="#">template</a></li>
+            <li>use existing cohorts or auto-generate new ones</li>
+            <li>check for errors</li>
+            <li>amend errors in your data file</li>
+            <li>approve apprentice details and send to more than 1 employer at the same time</li>
+          </ul>
+
+          <!-- CTA -->
+          <button class="govuk-button" data-module="govuk-button">
+            Continue to upload
+          </button>
+        </form>
+         <!-- END CTA -->
+
+
+
+      </div>
+    </div>
+  </main>
+  
+  
+ 
+
+  
+  
+</div>
+{% endblock %}
+
+{% endblock %}

@@ -11,7 +11,7 @@ router.post('/bulk-upload/manual-or-upload', (req, res) => {
 	if(req.session.data['add-apprentice-option'] == 'added-manually'){
 		res.redirect('manual-journey/manual')
 	} else {
-		res.redirect('file-upload')
+		res.redirect('file-upload-before')
 	}
 })
 
