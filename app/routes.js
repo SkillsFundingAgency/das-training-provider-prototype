@@ -128,7 +128,6 @@ router.post('/bulk-upload/manual-journey/manual', (req, res) => {
 	}
 })
 
-//Manually add apprentice details
 router.post('/bulk-upload/v4/manual-journey/manual', (req, res) => {
 	if(req.session.data['manual-add'] == 'existing-cohort'){
 		res.redirect('existing-cohorts')
@@ -169,6 +168,15 @@ router.post('/bulk-upload/v4/manual-journey/confirm-employer-non-levy', (req, re
 		res.redirect('choose-reservation')
 	} else {
 		res.redirect('choose-employer')
+	}
+})
+
+//Choose reservation
+router.post('/bulk-upload/manual-journey/choose-reservation', (req, res) => {
+	if(req.session.data['reservation'] == 'new'){
+		res.redirect('choose-reservation')
+	} else {
+		res.redirect('apprentice-details-add')
 	}
 })
 
