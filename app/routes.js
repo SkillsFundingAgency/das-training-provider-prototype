@@ -180,8 +180,31 @@ router.post('/bulk-upload/manual-journey/choose-reservation', (req, res) => {
 	}
 })
 
+//PAS APPROVE APPRENTICE DETAILS PAGE (/mvs/cohort)
 
-//PAS APPROVE APPRENTICE DETAILS PAGE
+//Check and confirm apprentice details
+router.post('/bulk-upload/file-upload-check', (req, res) => {
+    if(req.session.data['bulk-upload-confirm'] == 'details-approve'){
+        res.redirect('success')
+    } else if(req.session.data['bulk-upload-confirm'] == 'details-save'){
+        res.redirect('success-save-draft')
+	} else if(req.session.data['bulk-upload-confirm'] == 'details-new-file'){
+        res.redirect('amended-file')
+    }
+})
+
+//Ready for approval
+router.post('/cohort/mvs/approval', (req, res) => {
+	if(req.session.data['send-employer'] == 'send-review'){
+		res.redirect('confirmation-review')
+	} else if(req.session.data['send-employer'] == 'send-approve'){
+        res.redirect('confirmation-approve')
+	} else if(req.session.data['send-employer'] == 'no'){
+        res.redirect('apprentice-requests')
+    }
+})
+
+//PAS APPROVE APPRENTICE DETAILS PAGE (/cohort)
 
 //Ready for approval
 router.post('/cohort/index', (req, res) => {

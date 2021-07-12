@@ -170,46 +170,55 @@ Approve 3 apprentices' details
 		<p class="govuk-list govuk-link--no-visited-state"><a href="#">Upload apprentice(s) using a CSV file</a></p>
    			 <!-- END ADD ANOTHER APPRENTICE -->
 
-				<!-- RADIO BUTTONS -->
-				<div class="govuk-form-group">
+					<!-- RADIO BUTTONS -->
+					<div class="govuk-form-group">
 
-					<form method="post">
-
-					<fieldset class="govuk-fieldset" aria-describedby="contact-hint">
-					  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-						<h1 class="govuk-fieldset__heading govuk-!-margin-top-6">
-						  Submit to employer?
-						</h1>
-					  </legend>
-					  <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
-						<div class="govuk-radios__item">
-						  <input class="govuk-radios__input" id="send-review" name="send-employer" type="radio" value="yes" data-aria-controls="conditional-contact">
-						  <label class="govuk-label govuk-radios__label" for="send-review">
-							Yes, send to employer to review or add details
-						  </label>
-						</div>
-						<div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact">
-						  <div class="govuk-form-group">
-							<div class="govuk-form-group">
-								<label class="govuk-label" for="contact-by-phone">
-									Leave SAINSBURY'S a message (optional)
-								</label>
-							<textarea class="govuk-textarea govuk-!-width-two-thirds" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+						<form method="post" action="approval">
+	
+						<fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+						  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+							<h1 class="govuk-fieldset__heading govuk-!-margin-top-6">
+							  Approve these details?
+							</h1>
+						  </legend>
+						  <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+							<div class="govuk-radios__item">
+							  <input class="govuk-radios__input" id="send-approve" name="send-employer" type="radio" value="send-approve" data-aria-controls="conditional-message">
+							  <label class="govuk-label govuk-radios__label" for="send-approve">
+								Yes, send to employer for approval
+							  </label>
 							</div>
-						</div>
-
-						</div>
-						<div class="govuk-radios__item">
-						  <input class="govuk-radios__input" id="send-review-no" name="send-employer" type="radio" value="no" data-aria-controls="conditional-contact-2">
-						  <label class="govuk-label govuk-radios__label" for="send-review-no">
-							No, save and return to apprentice requests
-						  </label>
-						</div>
+							<div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-message">
+							  <div class="govuk-form-group">
+								<div class="govuk-form-group">
+									<label class="govuk-label" for="send-approve-message">
+										Leave SAINSBURY'S a message (optional)
+									</label>
+								<textarea class="govuk-textarea govuk-!-width-two-thirds" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+								</div>
+							</div>
+	
+							</div>
+							<div class="govuk-radios__item">
+							  <input class="govuk-radios__input" id="send-review" name="send-employer" type="radio" value="send-review" data-aria-controls="conditional-message-2">
+							  <label class="govuk-label govuk-radios__label" for="send-review">
+								No, send to employer to review or add details
+							  </label>
+							</div>
+							<div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-message-2">
+							  <div class="govuk-form-group">
+								<label class="govuk-label" for="contact-send-review">
+								  Leave SAINSBURY'S a message (optional)
+								</label>
+								<textarea class="govuk-textarea govuk-!-width-two-thirds" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+							  </div>
+							</div>
+						  </div>
+					  
+						</fieldset>
 					  </div>
-				  
-					</fieldset>
-				  </div>
-			<!-- END RADION BUTTONS -->
+	
+				<!-- END RADIO BUTTONS -->
 
 			<!--  CTA's -->
 			<div class="govuk-form-group">
