@@ -1,0 +1,8 @@
+CohortRef,AgreementID,ULN,FamilyName,GivenNames,DateOfBirth,EmailAddress,StdCode,StartDate,EndDate,TotalPrice,EPAOrgID,ProviderRef,Error
+V6RRJV,7877B7,8890987643,Jones,Louise,03/10/1998,louise@employer1.com,57,11/08/2021,2023-05,2000,,CX768,The start date overlaps with existing training dates for the same apprentice
+,7877B7,9875463215,Smith,Mark,04/10/1998,mark@abc.com,57,31/07/2021,2022-06,2000,EPA0001,ZB657,"The start date overlaps with existing training dates for the same apprentice
+The end date overlaps with existing training dates for the same apprentice"
+,77N9B5,9875463216,Clarke,David,24/06/2000,davidclarke@email.com,12,01/08/2021,2023-06,8000,,ZB658,You must enter a valid ULN
+YX246B,77N9B6,4568909764,Patel,Anish,,anishpatel@email.com,49,01/08/2021,2023-06,8000,,ZB659,This ULN is already in cohort VPR89L. You need to amend or remove duplicates from either the CSV or the cohort
+,77N9B7,9087767567,Howard,Annabelle,,annabellehoward@email.com,32,01/08/2021,2023-06,8000,,ZB660,You cannot add details to this cohort. You need to add this learner to a different cohort
+,77N9B8,9875463216,Price,Jack,,jackprice@email.com,32,01/08/2021,2023-06,8000,,ZB661,The employer has exceeded their maximum reservations. You need to delete an unused reservation to continue
