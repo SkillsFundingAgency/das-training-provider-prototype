@@ -1,0 +1,194 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Bulk uploads prototype - Training provider
+{% endblock %}
+
+
+{% block main %}
+
+{% include "includes/account-header+nav.html" %}
+
+{% block content %}
+
+<style>
+    .alignleft {
+    float: left;
+}
+.alignright {
+    float: right;
+}
+
+.das-inset-text--highlight {
+    border-left-color: #1d70b8;
+}
+
+</style>
+
+
+<div class="govuk-width-container">
+	
+	<a href="file-upload-check" class="govuk-back-link">Back</a>
+	
+
+	<div class="govuk-grid-row">
+	    <div class="govuk-grid-column-full">
+					    
+		    <h1 class="govuk-heading-xl  govuk-!-margin-top-4">Review apprentices</h1>		 
+		    
+	    </div>
+	</div>
+	
+		
+	
+	<div class="govuk-grid-row">
+	    <div class="govuk-grid-column-two-thirds">
+		    		    						 
+		    <dl class="govuk-summary-list govuk-summary-list">
+			  <div class="govuk-summary-list__row">
+			    <dt class="govuk-summary-list__key">
+			      Employer
+			    </dt>
+			    <dd class="govuk-summary-list__value">
+			      SAINSBURY'S
+			    </dd>
+			  </div>
+			  <div class="govuk-summary-list__row">
+			    <dt class="govuk-summary-list__key">
+			      Cohort
+			    </dt>
+			    <dd class="govuk-summary-list__value">
+					VRY89L
+			    </dd>
+			  </div>
+			  <div class="govuk-summary-list__row">
+			    <dt class="govuk-summary-list__key">
+			      Message from employer
+			    </dt>
+			    <dd class="govuk-summary-list__value">
+			      No message added.
+			    </dd>
+			  </div>
+			  <div class="govuk-summary-list__row">
+			    <dt class="govuk-summary-list__key">
+			      Total apprentices
+			    </dt>
+			    <dd class="govuk-summary-list__value">
+			      2
+			    </dd>
+			  </div>
+			  <div class="govuk-summary-list__row">
+			    <dt class="govuk-summary-list__key">
+			      Total cost
+			    </dt>
+			    <dd class="govuk-summary-list__value">
+			      £2,500
+			    </dd>
+			  </div>
+			</dl>
+
+		</div>
+	</div>
+	
+
+	<div class="govuk-grid-row">
+	    <div class="govuk-grid-column-full">
+
+			<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+			
+			<!-- NEW APPRENTICES -->
+			<div class="group-header">
+				<h2 class="govuk-heading-m group-title">New apprentices added from file</h2>
+			</div>
+
+			<div class="govuk-warning-text">
+				<span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+				<strong class="govuk-warning-text__text">
+				  <span class="govuk-warning-text__assistive">Warning</span>
+				  If you need to correct any records, you need to amend the data in your source file, then upload your CSV file again</a>.
+				</strong>
+			  </div>
+
+
+			  <table class="govuk-table">
+			  <thead class="govuk-table__head">
+				<tr class="govuk-table__row">
+				  <th scope="col" class="govuk-table__header">Name</th>
+				  <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Apprenticeship training course</th>
+				  <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Unique learner number</th>
+				  <th scope="col" class="govuk-table__header">Date of birth</th>
+				  <th scope="col" class="govuk-table__header">Training dates</th>
+				  <th scope="col" class="govuk-table__header">Cost</th>
+				</tr>
+			  </thead>
+
+				<tbody class="govuk-table__body govuk-!-font-size-16">
+				<tr class="govuk-table__row">
+					<td class="govuk-table__cell">David Clarke</td>
+					<td class="govuk-table__cell">Abattoir worker, Level: 2</td>
+					<td class="govuk-table__cell">6493849228</td>
+					<td class="govuk-table__cell">7 Apr 1999</td>
+					<td class="govuk-table__cell">Jan 2021 to Jul 2022</td>
+					<td class="govuk-table__cell">£1,250</td>
+					</tr>
+	
+				</tr>
+			  </tbody>
+			</table>	
+			<!-- END NEW APPRENTICES -->
+
+			<!-- EXISTING APPRENTICES -->
+			<div class="group-header">
+				<h2 class="govuk-heading-m group-title govuk-!-margin-top-8">Apprentices already in this cohort </h2>
+			</div>
+
+			<table class="govuk-table">
+				<thead class="govuk-table__head">
+				  <tr class="govuk-table__row">
+					<th scope="col" class="govuk-table__header ">Name</th>
+					<th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Apprenticeship training course</th>
+					<th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Unique learner number</th>
+					<th scope="col" class="govuk-table__header">Date of birth</th>
+					<th scope="col" class="govuk-table__header">Training dates</th>
+					<th scope="col" class="govuk-table__header">Cost</th>
+				  </tr>
+				</thead>
+  
+				<!-- FUNDING BAND MAX -->
+				<div class="govuk-inset-text das-inset-text--highlight">
+					<p><strong>1 apprenticeship cost is above their <a href="https://www.gov.uk/government/publications/apprenticeship-funding-bands?_ga=2.6361077.616078644.1624276708-2102535818.1600419640" class="govuk-link govuk-link--no-visited-state" rel="noreferrer noopener" target="_blank">funding band maximum (opens in new tab)</a></strong>
+						<br>You'll need to ask the employer to pay the difference directly to you - this can't be funded from their account:
+						<ul class="govuk-list govuk-list--bullet">
+							<li><strong>Louise James</strong> is above the £1,500 maximum value</li>
+						</ul>
+					</div>
+					<!-- END FUNDING BAND MAX -->
+
+				<tbody class="govuk-table__body govuk-!-font-size-16">
+					<tr class="govuk-table__row">
+					  <td class="govuk-table__cell">Louise James</td>
+					  <td class="govuk-table__cell">Food and Drink: Meat and Poultry Industry Skills, Level: 4</td>
+					  <td class="govuk-table__cell">9384922898</td>
+					  <td class="govuk-table__cell">13 Jan 2000</td>
+					  <td class="govuk-table__cell">Jan 2021 to Jul 2022</td>
+					  <td class="govuk-table__cell">£3,250</td>
+					</tr>
+				</tr>
+			</tbody>
+		  </table>
+		  <!-- END EXISTING APPRENTICES -->
+
+	    </div>
+	</div>
+
+
+	
+	
+	<a href="file-upload-check" class="govuk-back-link govuk-!-margin-bottom-6">Back</a>
+
+</div>
+
+
+{% endblock %}
+
+{% endblock %}

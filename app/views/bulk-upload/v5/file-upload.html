@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Bulk uploads prototype - Training provider
+{% endblock %}
+
+
+{% block main %}
+
+{% include "includes/account-header+nav.html" %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+	
+  <a href="file-upload-before" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form action="file-upload-errors" method="post" novalidate>
+			
+          <h1 class="govuk-heading-xl">Upload a CSV file</h1>
+
+          <p class="govuk-body">There is a <a href="https://www.gov.uk/government/publications/apprenticeship-service-bulk-upload-specification" class="govuk-link govuk-link--no-visited-state">full specification</a> on uploading new apprentices using a CSV file on GOV.UK.</p>
+           
+          <!-- FILE UPLOAD -->
+          <div class="govuk-form-group govuk-!-margin-top-6">
+            <label class="govuk-label" for="file-upload-1">
+              Your CSV file should not have more than 100 rows
+            </label>
+            <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+          </div>			    
+          <!-- END FILE UPLOAD -->
+
+          <!-- CTA -->
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+         <!-- END CTA -->
+
+
+
+      </div>
+    </div>
+  </main>
+  
+  
+ 
+
+  
+  
+</div>
+{% endblock %}
+
+{% endblock %}

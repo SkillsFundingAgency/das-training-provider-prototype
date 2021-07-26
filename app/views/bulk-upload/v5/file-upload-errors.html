@@ -1,0 +1,152 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Bulk uploads prototype - Training provider
+{% endblock %}
+
+
+{% block main %}
+
+{% include "includes/account-header+nav.html" %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+
+	<a href="file-upload" class="govuk-back-link">Back</a>
+
+	<!-- ERROR MESSAGE -->
+	<div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="govuk-error-summary">
+		<h2 class="govuk-error-summary__title" id="error-summary-title">
+		  There is a problem
+		</h2>
+		<div class="govuk-error-summary__body">
+		  <ul class="govuk-list govuk-error-summary__list">
+			<li>
+			  <a href="#file-error">You need to correct the errors and upload the file again</a>
+			</li>
+		  </ul>
+		</div>
+	  </div>
+	  <!-- END ERROR MESSAGE -->
+
+	<div class="govuk-grid-row">
+	    <div class="govuk-grid-column-full">
+
+		    <h1 class="govuk-heading-l  govuk-!-margin-top-4">Your CSV file has the following errors </h1>
+
+			<div class="govuk-warning-text">
+				<span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+				<strong class="govuk-warning-text__text">
+				  <span class="govuk-warning-text__assistive">Warning</span>
+				  The file could not be uploaded because it contains errors. No records have been uploaded.
+				</strong>
+			  </div>
+		   
+
+							<!-- ERROR TABLE 1 -->
+		<div class="govuk-form-group govuk-form-group--error">
+			<table class="govuk-table govuk-!-margin-top-8">
+				<caption class="govuk-table__caption govuk-table__caption--s govuk-!-margin-bottom-4 govuk-error-message">
+					<span id="file-error-error" class="govuk-error-message">
+					<span class="govuk-visually-hidden">Error:</span>You need to correct the errors and upload the file again</caption>
+					</span>
+				<thead class="govuk-table__head">
+					<tr class="govuk-table__row">
+					<th scope="col" class="govuk-table__header">Row</th>
+					<th scope="col" class="govuk-table__header">Employer</th>
+					<th scope="col" class="govuk-table__header">Unique learner number (ULN)</th>
+					<th scope="col" class="govuk-table__header">Name</th>
+					<th scope="col" class="govuk-table__header">Errors</th>
+					</tr>
+				</thead>
+				<tbody class="govuk-table__body">
+					<tr class="govuk-table__row">
+					<th scope="row" class="govuk-table__header">1</th>
+					<td class="govuk-table__cell">SAINSBURY'S</td>
+					<td class="govuk-table__cell">923456789</td>
+					<td class="govuk-table__cell">Louise James</td>
+					<td class="govuk-table__cell"><li>The <strong>start date</strong> overlaps with existing training dates for the same apprentice</li></td>
+					</tr>
+					<tr class="govuk-table__row">
+					<th scope="row" class="govuk-table__header">2</th>
+					<td class="govuk-table__cell">SAINSBURY'S</td>
+					<td class="govuk-table__cell">978645372</td>
+					<td class="govuk-table__cell">Mark Smith</td>
+					<td class="govuk-table__cell"><li>The <strong>start date</strong> overlaps with existing training dates for the same apprentice</li>
+						<li>The <strong>end date</strong> overlaps with existing training dates for the same apprentice</li></td>
+					</tr>
+					<tr class="govuk-table__row">
+					<th scope="row" class="govuk-table__header">3</th>
+					<td class="govuk-table__cell">TESCO</td>
+					<td class="govuk-table__cell">872635447</td>
+					<td class="govuk-table__cell">David Clarke</td>
+					<td class="govuk-table__cell"><li>You must enter a valid <strong>ULN</strong></li></td>
+					</tr>
+					<tr class="govuk-table__row">
+						<th scope="row" class="govuk-table__header">13</th>
+						<td class="govuk-table__cell">TESCO</td>
+						<td class="govuk-table__cell">972635447</td>
+						<td class="govuk-table__cell">Anish Patel</td>
+						<td class="govuk-table__cell"><li>This <strong>ULN</strong> is already in cohort VPR89L. You need to amend or remove duplicates from either the CSV or the cohort</li></td>
+						</tr>
+						<tr class="govuk-table__row">
+							<th scope="row" class="govuk-table__header">32</th>
+							<td class="govuk-table__cell">TESCO</td>
+							<td class="govuk-table__cell">762635447</td>
+							<td class="govuk-table__cell">Annabelle Howard</td>
+							<td class="govuk-table__cell"><li>You cannot add apprentices to this cohort, as it is no longer editable. You need to <strong>add this learner to a different or new cohort</strong></li></td>
+							</tr>
+							<tr class="govuk-table__row">
+								<th scope="row" class="govuk-table__header">33</th>
+								<td class="govuk-table__cell">ONA CONSULTING LTD</td>
+								<td class="govuk-table__cell">772635447</td>
+								<td class="govuk-table__cell">Jack Price</td>
+								<td class="govuk-table__cell"><li>The employer has exceeded their <strong>maximum reservations</strong>. You need to delete an unused reservation to continue</li></td>
+								</tr>
+	
+				</tbody>
+				</table>
+
+		</div>
+			<!-- END ERROR TABLE 1 -->
+
+			<p>
+				<a href="/public/downloads/upload-error-report.csv" class="govuk-link" download>Download the CSV file showing errors</a>
+		   </p>
+
+
+			<!-- REUPLOAD CSV FILE -->
+			<form action="file-upload-check" method="post" class="govuk-!-margin-top-8" novalidate>
+
+			<legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+	            <h1 class="govuk-fieldset__heading">
+	              Upload your amended file
+	            </h1>
+	          </legend>
+
+			  <div class="govuk-form-group govuk-!-margin-top-6">
+				<label class="govuk-label" for="file-upload-1">
+				Your CSV file should not have more than 100 rows
+				</label>
+				<input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+			  </div>			    
+             <!-- END REUPLOAD CSV FILE -->
+			  
+			 <!-- CTA -->
+			<div class="govuk-button-group govuk-!-margin-top-6">
+				<a class="govuk-button" data-module="govuk-button" href="file-upload-check">Continue</a>
+		   </div>
+		   <p class="gov-body govuk-!-margin-bottom-8"><a class="govuk-link" href="file-upload-before">Cancel</a></p>
+			<!-- END CTA -->
+
+	    </div>
+	</div>
+
+</div>
+
+
+{% endblock %}
+
+{% endblock %}

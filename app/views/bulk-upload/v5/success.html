@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Bulk uploads prototype - Training provider
+{% endblock %}
+
+
+{% block main %}
+
+{% include "includes/account-header+nav.html" %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-panel govuk-panel--confirmation">
+          <h1 class="govuk-panel__title">
+            New apprentices added and sent to employer(s) for approval
+          </h1>
+        </div>
+
+        <p class="govuk-body">We have sent confirmation emails to you and the employer(s).</p>
+
+        <table class="govuk-table">
+          <caption class="govuk-table__caption govuk-table__caption--m">Cohorts sent</caption>
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header govuk-!-width-one-third">Employer</th>
+              <th scope="col" class="govuk-table__header">Cohort</th>
+              <th scope="col" class="govuk-table__header govuk-!-width-one-third">Cohort created</th>
+              <th scope="col" class="govuk-table__header">Number of apprentices</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">SAINSBURY'S</td>
+              <td class="govuk-table__cell">VPR89L</td>
+              <td class="govuk-table__cell">Previously created</td>
+              <td class="govuk-table__cell">2</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">SAINSBURY'S</td>
+              <td class="govuk-table__cell">PPR87U</td>
+              <td class="govuk-table__cell">Auto-generated</td>
+              <td class="govuk-table__cell">2</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">TESCO</td>
+              <td class="govuk-table__cell">JPR87J</td>
+              <td class="govuk-table__cell">Auto-generated</td>
+              <td class="govuk-table__cell">28</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">ONA CONSULTING LTD</td>
+              <td class="govuk-table__cell">7KR87J</td>
+              <td class="govuk-table__cell">Auto-generated</td>
+              <td class="govuk-table__cell">1</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">COMPLIANCE LIMITED</td>
+              <td class="govuk-table__cell">9L0886</td>
+              <td class="govuk-table__cell">Auto-generated</td>
+              <td class="govuk-table__cell">10</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 class="govuk-heading-m">What happens next</h2>
+
+        <p class="govuk-body">
+          The employer(s) will need to approve the new apprentices before they're added to the service.
+        </p>
+
+        <ul class="govuk-list">
+          <li><a href="index" class="govuk-link">Go to homepage</a></li>
+          <li><a href="apprentices-with-employers" class="govuk-link">View apprentice details with employers</a></li>
+          <li><a href="manual-or-upload" class="govuk-link">Add more apprentices</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}
+
+{% endblock %}

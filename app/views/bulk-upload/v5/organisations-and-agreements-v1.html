@@ -1,0 +1,112 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Bulk uploads prototype - Training provider
+{% endblock %}
+
+
+{% block main %}
+
+{% include "includes/account-header+nav.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+     <a href="#" class="govuk-back-link">Back</a>
+
+     <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+
+
+     <h1 class="govuk-heading-xl govuk-!-margin-top-9">Organisations and agreements</h1>
+
+     <p class="govuk-body">Listed below is every organisation you work with on the apprenticeship service and their agreement ID.</p>
+     <p class="govuk-body">You need to add this agreement ID to the individualised learner record (ILR) data. This allows us to provide users with better error messages whenever a data mismatch occurs.</p>
+
+     <table class="govuk-table" id="order-table-one">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header" onclick="sortTableOne(0)"><span class="icon sort"></span>Organisation</th>
+					<th scope="col" class="govuk-table__header" onclick="sortTableOne(1)"><span class="icon sort"></span>Cohort ID</th>
+					<th scope="col" class="govuk-table__header" onclick="sortTableOne(2)"><span class="icon sort"></span>Agreement ID</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">AUTOMATION & OPTIMISATION LTD</td>
+          <td class="govuk-table__cell">YJ77B7</td>
+          <td class="govuk-table__cell">7GXEKP</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">BARBERRY COVENTRY LIMITED</td>
+          <td class="govuk-table__cell">M6KRBN</td>
+          <td class="govuk-table__cell">75492K</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">BARBERRY COVENTRY LIMITED</td>
+          <td class="govuk-table__cell">M7N9B6</td>
+          <td class="govuk-table__cell">75492K</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">BARBERRY COVENTRY LIMITED</td>
+          <td class="govuk-table__cell">MD676G</td>
+          <td class="govuk-table__cell">75492K</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">BARBERRY COVENTRY LIMITED</td>
+          <td class="govuk-table__cell">ML8PJL</td>
+          <td class="govuk-table__cell">75492K</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">COMPLIANCE LIMITED</td>
+          <td class="govuk-table__cell">79967B</td>
+          <td class="govuk-table__cell">XRRXXE</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">COVENTRY & WARWICKSHIRE CHAMBER OF COMMERCE</td>
+          <td class="govuk-table__cell">4R7B9K</td>
+          <td class="govuk-table__cell">3YBKWV</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">COVENTRY & WARWICKSHIRE CHAMBER OF COMMERCE</td>
+          <td class="govuk-table__cell">4R98D6</td>
+          <td class="govuk-table__cell">3YBKWV</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">COVENTRY & WARWICKSHIRE CHAMBER OF COMMERCE</td>
+          <td class="govuk-table__cell">6PLKYL</td>
+          <td class="govuk-table__cell">3YBKWV</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">COVENTRY & WARWICKSHIRE CHAMBER OF COMMERCE</td>
+          <td class="govuk-table__cell">9GNRNX</td>
+          <td class="govuk-table__cell">3YBKWV</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">COVENTRY & WARWICKSHIRE CHAMBER OF COMMERCE</td>
+          <td class="govuk-table__cell">JK4898</td>
+          <td class="govuk-table__cell">3YBKWV</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">COVENTRY & WARWICKSHIRE CHAMBER OF COMMERCE</td>
+          <td class="govuk-table__cell">M7N9B6</td>
+          <td class="govuk-table__cell">KK7JLY</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">COVENTRY & WARWICKSHIRE CHAMBER OF COMMERCE</td>
+          <td class="govuk-table__cell">M7N9B6</td>
+          <td class="govuk-table__cell">M4XY9G</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <p class="govuk-body">You can download this data as a <a href="#">CSV</a> or <a href="#">Excel</a> file.</p>
+
+      </div>
+     </div>
+</div>
+
+{% endblock %}
+{% endblock %}

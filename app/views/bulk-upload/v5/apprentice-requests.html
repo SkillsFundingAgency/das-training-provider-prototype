@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Bulk uploads prototype - Training provider
+{% endblock %}
+
+
+{% block main %}
+
+{% include "includes/account-header+nav.html" %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+	
+	<a href="index" class="govuk-back-link">Back</a>
+	
+
+	<div class="govuk-grid-row">
+	    <div class="govuk-grid-column-full">
+					    
+		    <h1 class="govuk-heading-xl  govuk-!-margin-top-4">Apprentice requests</h1>	
+		</div>
+	</div>
+			
+	<div class="govuk-grid-row">
+	    <div class="govuk-grid-column-two-thirds">
+			<div class="govuk-width-container govuk-!-margin-bottom-8">
+
+			
+			<div class="das-cards das-cards--bingo">
+                
+					<a id="Review" class="das-card-link--bingo das-card" href="#">
+						<span class="das-card-figure govuk-!-font-size-80"><strong>689</span><br>
+						<span class="govuk-visually-hidden">cohorts</span>
+						<span class="das-text-capitalise">ready to review</span></strong>
+					</a>
+								
+					<a id="WithEmployer" class="das-card-link--bingo das-card" href="apprentices-with-employers">
+						<span class="das-card-figure govuk-!-font-size-80"><strong>106</span><br>
+						<span class="govuk-visually-hidden">cohorts</span>
+						<span class="das-text-capitalise">with employers</strong></span>
+					</a>
+				
+					<a id="Draft" class="das-card-link--bingo das-card" href="draft-apprentices">
+						<span class="das-card-figure govuk-!-font-size-80"><strong>8</span><br>
+						<span class="govuk-visually-hidden">cohorts</span>
+						<span class="das-text-capitalise">drafts</span></strong>
+					</a>
+
+					<a id="WithTransferSender" class="das-card-link--bingo das-card" href="#">
+						<span class="das-card-figure govuk-!-font-size-80"><strong>5</span><br>
+						<span class="govuk-visually-hidden">cohorts</span>
+						<span class="das-text-capitalise">with transfer sending employers</strong></span>
+					</a>
+							</div>
+			
+						</div>
+	    </div>
+	</div>
+	
+</div>	
+
+
+
+
+
+
+
+{% endblock %}
+
+{% endblock %}
