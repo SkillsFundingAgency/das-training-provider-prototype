@@ -17,17 +17,17 @@
 	<a href="javascript:history.back()" class="govuk-back-link">Back</a>
 
 	<div class="govuk-grid-row">
-	    <div class="govuk-grid-column-full">
+		<div class="govuk-grid-column-two-thirds">
 					    
 		    <h1 class="govuk-heading-l  govuk-!-margin-top-4">Choose an employer</h1>		
 			<p class="govuk-body">Choose an employer you want to add apprentice details on behalf of.</p> 
 			  
-				<table class="govuk-table govuk-!-margin-bottom-8">
+				<table class="govuk-table govuk-!-margin-bottom-8" id="order-table-one">
 				<thead class="govuk-table__head">
 				  <tr class="govuk-table__row">
-					<th scope="col" class="govuk-table__header">Employer</th>
-					<th scope="col" class="govuk-table__header">Account name</th>
-					<th scope="col" class="govuk-table__header">Agreement ID</th>
+					<th scope="col" class="govuk-table__header" onclick="sortTableOne(0)"><span class="icon sort">Employer</th>
+					<th scope="col" class="govuk-table__header" onclick="sortTableOne(1)"><span class="icon sort"></span>Account name</th>
+					<th scope="col" class="govuk-table__header"><div style="color:black;"><a style="text-decoration-color: white" >Agreement ID</div></a></th>
 					<th scope="col" class="govuk-table__header"></th>
 				  </tr>
 				</thead>
@@ -38,13 +38,32 @@
 					<td class="govuk-table__cell">X4JKRY</td>
 					<td class="govuk-table__cell"><a href="confirm-employer">Select</a></td>
 				  </tr>
-				  <tbody class="govuk-table__body">
 					<tr class="govuk-table__row">
 					  <td class="govuk-table__cell">SAINSBURY'S</td>
 					  <td class="govuk-table__cell">SAINSBURY'S (non-Levy)</td>
 					  <td class="govuk-table__cell">P4JKRY</td>
 					  <td class="govuk-table__cell"><a href="confirm-employer-non-levy">Select</a></td>
 					</tr>
+					<tr class="govuk-table__row">
+						<td class="govuk-table__cell">ESFA LTD</td>
+						<td class="govuk-table__cell">ESFA LTD</td>
+						<td class="govuk-table__cell">7XZ66W</td>
+						<td class="govuk-table__cell"><a href="confirm-employer-non-levy">Select</a></td>
+					</tr>
+					<tr class="govuk-table__row">
+						<td class="govuk-table__cell">BAC LIMITED</td>
+						<td class="govuk-table__cell">ONA CONSULTING LTD</td>
+						<td class="govuk-table__cell">3W5D6J</td>
+						<td class="govuk-table__cell"><a href="confirm-employer-non-levy">Select</a></td>
+					</tr>
+					<tr class="govuk-table__row">
+						<td class="govuk-table__cell">ACCOUNTANT LTD</td>
+						<td class="govuk-table__cell">ACCOUNTANT LTD</td>
+						<td class="govuk-table__cell">3W5D6J</td>
+						<td class="govuk-table__cell"><a href="confirm-employer-non-levy">Select</a></td>
+					</tr>
+
+  
   
 				  </tr>
 				</tbody>
