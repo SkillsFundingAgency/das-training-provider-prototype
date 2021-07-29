@@ -1,0 +1,154 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Choose an employer
+{% endblock %}
+
+
+{% block main %}
+
+{% include "includes/account-header+nav.html" %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+	
+	<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-two-thirds">
+					    
+		    <h1 class="govuk-heading-l  govuk-!-margin-top-6">Choose an employer</h1>		
+			<p class="govuk-body">This is the employer you are reserving funds on behalf of.</p> 
+            <p class="govuk-body">15 results found.</p> 
+
+			  
+				<table class="govuk-table govuk-!-margin-bottom-8" id="order-table-one">
+				<thead class="govuk-table__head">
+				  <tr class="govuk-table__row">
+					<th scope="col" class="govuk-table__header" onclick="sortTableOne(0)"><span class="icon sort">Employer</th>
+					<th scope="col" class="govuk-table__header" onclick="sortTableOne(1)"><span class="icon sort"></span>Account name</th>
+					<th scope="col" class="govuk-table__header"><div style="color:black;"><a style="text-decoration-color: white" >Agreement ID</div></a></th>
+					<th scope="col" class="govuk-table__header"></th>
+				  </tr>
+				</thead>
+				<tbody class="govuk-table__body">
+				  <tr class="govuk-table__row">
+					<td class="govuk-table__cell govuk-!-font-weight-bold">SAINSBURY'S</td>
+					<td class="govuk-table__cell">SAINSBURY'S (levy)</td>
+					<td class="govuk-table__cell">Agreement not accepted</td>
+                    <td class="govuk-table__cell"><a href="#">Select</a></td>
+                </tr>
+					<tr class="govuk-table__row">
+					  <td class="govuk-table__cell govuk-!-font-weight-bold">SAINSBURY'S</td>
+					  <td class="govuk-table__cell">SAINSBURY'S (non-Levy)</td>
+					  <td class="govuk-table__cell">P4JKRY</td>
+                      <td class="govuk-table__cell"><a href="#">Select</a></td>
+					</tr>
+					<tr class="govuk-table__row">
+						<td class="govuk-table__cell govuk-!-font-weight-bold">ESFA LTD</td>
+						<td class="govuk-table__cell">ESFA LTD</td>
+						<td class="govuk-table__cell">7XZ66W</td>
+						<td class="govuk-table__cell"><a href="#">Select</a></td>
+					</tr>
+					<tr class="govuk-table__row">
+						<td class="govuk-table__cell govuk-!-font-weight-bold">BAC LIMITED</td>
+						<td class="govuk-table__cell">BAC LIMITED</td>
+						<td class="govuk-table__cell">3W5D6J</td>
+						<td class="govuk-table__cell"><a href="#">Select</a></td>
+					</tr>
+					<tr class="govuk-table__row">
+						<td class="govuk-table__cell govuk-!-font-weight-bold">ACCOUNTANT LTD</td>
+						<td class="govuk-table__cell">ACCOUNTANT LTD</td>
+						<td class="govuk-table__cell">4W5D6J</td>
+						<td class="govuk-table__cell"><a href="#">Select</a></td>
+					</tr>
+                    <tr class="govuk-table__row">
+						<td class="govuk-table__cell govuk-!-font-weight-bold">ESFA LTD</td>
+						<td class="govuk-table__cell">ESFA LTD</td>
+						<td class="govuk-table__cell">5XZ66W</td>
+						<td class="govuk-table__cell"><a href="#">Select</a></td>
+					</tr>
+					<tr class="govuk-table__row">
+						<td class="govuk-table__cell govuk-!-font-weight-bold">BAC LIMITED</td>
+						<td class="govuk-table__cell">ONA CONSULTING LTD</td>
+						<td class="govuk-table__cell">6W5D6J</td>
+						<td class="govuk-table__cell"><a href="#">Select</a></td>
+					</tr>
+					<tr class="govuk-table__row">
+						<td class="govuk-table__cell govuk-!-font-weight-bold">ACCOUNTANCY LTD</td>
+						<td class="govuk-table__cell">ACCOUNTANT LTD</td>
+						<td class="govuk-table__cell">765D6J</td>
+						<td class="govuk-table__cell"><a href="#">Select</a></td>
+					</tr>
+                    <tr class="govuk-table__row">
+						<td class="govuk-table__cell govuk-!-font-weight-bold">WARWICKSHIRE CHAMBER OF COMMERCE</td>
+						<td class="govuk-table__cell">WARWICKSHIRE CHAMBER OF COMMERCE</td>
+						<td class="govuk-table__cell">8W5D6J</td>
+						<td class="govuk-table__cell"><a href="#">Select</a></td>
+					</tr>
+                    <tr class="govuk-table__row">
+						<td class="govuk-table__cell govuk-!-font-weight-bold">ENGINEERING & BUILDING SOLUTIONS LTD</td>
+						<td class="govuk-table__cell">ENGINEERING & BUILDING SOLUTIONS LTD</td>
+						<td class="govuk-table__cell">9J5D6J</td>
+						<td class="govuk-table__cell"><a href="#">Select</a></td>
+					</tr>
+                    <tr class="govuk-table__row">
+						<td class="govuk-table__cell govuk-!-font-weight-bold">ENGINEERING & BUILDING SOLUTIONS LTD</td>
+						<td class="govuk-table__cell">ENGINEERING & BUILDING SOLUTIONS LTD-LEVY</td>
+						<td class="govuk-table__cell">0J5D6J</td>
+						<td class="govuk-table__cell"><a href="#">Select</a></td>
+					</tr>
+                    <tr class="govuk-table__row">
+						<td class="govuk-table__cell govuk-!-font-weight-bold">M5 CORPORATION LIMITED</td>
+						<td class="govuk-table__cell">M5 CORPORATION LIMITED</td>
+						<td class="govuk-table__cell">Agreement not accepted</td>
+						<td class="govuk-table__cell"><a href="#">Select</a></td>
+					</tr>
+                    <tr class="govuk-table__row">
+						<td class="govuk-table__cell govuk-!-font-weight-bold">SKILLS FUNDING AGENCY</td>
+						<td class="govuk-table__cell">Skills Funding Agency_Levy Receiver</td>
+						<td class="govuk-table__cell">1J5D6J</td>
+						<td class="govuk-table__cell"><a href="#">Select</a></td>
+					</tr>
+                    <tr class="govuk-table__row">
+						<td class="govuk-table__cell govuk-!-font-weight-bold">AUTOMATION & OPTIMISATION LTD</td>
+						<td class="govuk-table__cell">AUTOMATION & OPTIMISATION LTD</td>
+						<td class="govuk-table__cell">2J5D6J</td>
+						<td class="govuk-table__cell"><a href="#">Select</a></td>
+					</tr>
+                    <tr class="govuk-table__row">
+						<td class="govuk-table__cell govuk-!-font-weight-bold">BARBERRY COVENTRY LIMITED</td>
+						<td class="govuk-table__cell">BARBERRY COVENTRY LIMITED</td>
+						<td class="govuk-table__cell">3J5D6J</td>
+						<td class="govuk-table__cell"><a href="#">Select</a></td>
+					</tr>
+
+
+
+
+
+  
+  
+				  </tr>
+				</tbody>
+			  </table>		
+		  </div>
+	  </div>
+  
+		    
+	    </div>
+	</div>
+	
+</div>	
+
+
+
+
+
+
+
+{% endblock %}
+
+{% endblock %}
