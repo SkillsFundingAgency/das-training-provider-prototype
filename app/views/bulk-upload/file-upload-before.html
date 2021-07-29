@@ -21,7 +21,7 @@
       <div class="govuk-grid-column-two-thirds">
         <form action="file-upload" method="post" novalidate>
 			
-          <h1 class="govuk-heading-xl">Creating an upload file</h1>
+          <h1 class="govuk-heading-xl">Using file upload</h1>
 
           <h2 class="govuk-heading-m">Before you start</h2>
 
@@ -32,20 +32,25 @@
 
           <p>The CSV file is limited to 100 rows.</p>
 
-          <h2 class="govuk-heading-m">Uploading a CSV file</h2>
+          <h2 class="govuk-heading-m">How it works</h2>
+
+          <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+            <li>use file upload to add 1 or more apprentices for 1 or more employers</li> 
+             <li>create new cohorts by leaving the 'CohortRef' field empty; the cohort will be created when you save or approve the file</li>
+            <li>add apprentices to existing cohorts that have not yet be approved by the employer</li>
+            <li>check for errors</li>
+          </ul>
+
+          <h2 class="govuk-heading-m">Creating a CSV file</h2>
 
           <p class="govuk-body">You can:</p>
           <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
-            <li>use your learner management system (LMS) to create a CSV file to upload 1 or more apprentices for 1 or more employers at the same time</li> 
-             <li>use our <a href="#">template</a> if you do not use a LMS</li>
-            <li>use existing cohort references to add new  apprentices</li>
-            <li>auto-generate new cohorts by leaving the cohort field empty</li>
-            <li>check for errors</li>
-            <li>approve apprentice details and send to more than 1 employer at the same time</li>
+            <li>use your learner management system (LMS) to create a CSV file</li> 
+            <li>use our <a href="#">template</a> if you do not use a LMS</li>
           </ul>
 
           <!-- CTA -->
-          <button class="govuk-button" data-module="govuk-button">
+          <button class="govuk-button govuk-!-margin-top-4" data-module="govuk-button">
             Continue to upload
           </button>
         </form>
