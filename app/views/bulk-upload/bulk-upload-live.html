@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Bulk uploads prototype - Training provider
+{% endblock %}
+
+
+{% block main %}
+
+{% include "../includes/account-header+nav.html" %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+	
+  <a href="#" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+          <div class="govuk-notification-banner__header">
+            <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+              Important
+            </h2>
+          </div>
+          <div class="govuk-notification-banner__content">
+            <p class="govuk-notification-banner__heading">
+              From 26 August 2021 we are changing the fields for Apprenticeship bulk uploads</p> 
+            <p class="govuk-body">You can find a full list in the <a href="https://www.gov.uk/government/publications/apprenticeship-service-bulk-upload-specification" class="govuk-link govuk-link--no-visited-state">bulk upload specification</a>.</p>
+          </div>
+        </div>
+			
+          <h1 class="govuk-heading-xl">Bulk upload apprentices</h1>
+
+          <p class="govuk-body">You can add details of multiple apprentices at the same time (bulk upload) using a csv file.</p>
+
+          <div class="govuk-inset-text govuk-!-font-size-16">
+            Uploading a file will overwrite any existing apprentice information in your cohort.
+          </div>
+
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                Help with bulk upload
+              </span>
+            </summary>
+            <div class="govuk-details__text govuk-!-font-size-16">
+              You must use a csv file to upload apprentice details.<br><br>
+              If you have a management information system, it may be able to create a csv file for you.<br><br>
+              Alternatively, a bulk upload template and further details of each field are available - <a href="#">view apprenticeship service bulk upload guidance</a>.
+            </div>
+          </details>
+
+          <!-- FILE UPLOAD -->
+          <div class="govuk-form-group govuk-!-margin-top-6">
+            <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+          </div>			    
+          <!-- END FILE UPLOAD -->
+
+          <!-- CTA -->
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+         <!-- END CTA -->
+
+
+
+      </div>
+    </div>
+  </main>
+  
+  
+ 
+
+  
+  
+</div>
+{% endblock %}
+
+{% endblock %}
