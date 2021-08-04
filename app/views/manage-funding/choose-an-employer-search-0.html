@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Choose an employer
+{% endblock %}
+
+
+{% block main %}
+
+{% include "includes/account-header+nav.html" %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+	
+	<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-two-thirds">
+					    
+		    <h1 class="govuk-heading-l  govuk-!-margin-top-6">Choose an employer</h1>		
+			<p class="govuk-body">This is the employer you are reserving funds on behalf of.</p> 
+
+        <!-- SEARCH - START -->
+        <div class="govuk-form-group">
+            <h1 class="govuk-label-wrapper"><label class="govuk-label" for="search">Search organisation name</label></h1>
+            <div class="search-container govuk-!-width-two-thirds">
+                  <input class="govuk-input" id="search" name="search" type="text" value="sjhfgsjfg">
+                  <span class="icon search"></span>
+            </div>
+        </div>
+        <!-- SEARCH - END -->
+
+
+        <p class="govuk-body"><a href="organisations-and-agreements">Clear search</a></p>
+
+        <p class="govuk-body govuk-!-margin-bottom-6">0 organisations match <b>'sjhfgsjfg'</b></p>
+  
+		    
+	    </div>
+	</div>
+	
+</div>	
+
+
+
+
+
+
+
+{% endblock %}
+
+{% endblock %}
