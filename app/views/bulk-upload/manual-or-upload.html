@@ -19,16 +19,17 @@
           <div class="govuk-grid-row">
                <div class="govuk-grid-column-two-thirds">
 
-                    <form method="post">
+                    <form method="post" novalidate data-validate='my-form-validation'>
+
+                         <h1 class="govuk-heading-l">Add new apprentices</h1>
 
                          <div class="govuk-form-group">
                               <fieldset class="govuk-fieldset">
                                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-                                        <h1 class="govuk-fieldset__heading">Add new apprentices</h1>
                                    </legend>
                                    <div class="govuk-radios">
                                         <div class="govuk-radios__item">
-                                             <input class="govuk-radios__input" id="add-apprentice-upload" name="add-apprentice-option" type="radio" value="added-upload">
+                                             <input class="govuk-radios__input" id="add-apprentice-option" name="add-apprentice-option" type="radio" value="added-upload">
                                              <label class="govuk-label govuk-radios__label" for="add-apprentice-upload">Upload a CSV file</label>
                                              <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">You can create or add to an existing cohort for 1 or more apprentices for 1 or more employers.</div>
                                         </div>
@@ -44,6 +45,16 @@
                          <button class="govuk-button" data-module="govuk-button">Continue</button>
 
                     </form>
+
+                    <script type="application/json" id="my-form-validation">
+                         { 		  	
+                              "add-apprentice-option": {
+                             "presence": {
+                               "message": "^you must select an option"
+                             }
+                           }
+                         }
+                       </script>
 
                </div>
           </div>
