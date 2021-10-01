@@ -1,0 +1,128 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Bulk uploads prototype - Training provider
+{% endblock %}
+
+
+{% block main %}
+
+{% include "../includes/account-header+nav.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+     <div class="govuk-grid-row">
+          <div class="govuk-grid-column-full">
+
+          <h1 class="govuk-heading-xl  govuk-!-margin-top-4">Check new apprentice records</h1>
+
+          <div class="govuk-warning-text">
+               <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+               <strong class="govuk-warning-text__text">
+                 <span class="govuk-warning-text__assistive">Warning</span>
+                 If you need to correct any records, you need to amend the data in your LMS, then <a href="amended-file" class="govuk-link--no-visited-state">upload your CSV file again</a>. This will avoid data locks.
+               </strong>
+             </div>
+
+          </div>
+     </div>
+
+     <div class="govuk-grid-row">
+          <div class="govuk-grid-column-full">
+
+               <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!-margin-bottom-8">
+
+			 <!-- EMPLOYER 1       -->
+               <div class="group-header">
+                    <h2 class="govuk-heading-l group-title ">SAINSBURY'S</h2>
+               </div>
+
+               <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!-width-two-thirds">
+               <p class="govuk-body-m">Cohort: VPR89L</p>
+               <p class="govuk-caption-m govuk-!-font-size-19">2 apprentices, total cost: £2,500</p>
+               <a href="review-cohort" class="govuk-link govuk-link--no-visited-state govuk-!-font-size-19">Review apprentices</a>
+               <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!-width-two-thirds">
+
+               <p class="govuk-body-m">Cohort: This will be created when you save or send to employers</p>
+               <p class="govuk-caption-m govuk-!-font-size-19">2 apprentices, total cost: £2,500</p>
+               <a href="review-cohort-new" class="govuk-link govuk-link--no-visited-state govuk-!-font-size-19">Review apprentices</a>
+               <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!-width-two-thirds">
+			<!-- END EMPLOYER 1 -->
+
+			<!-- EMPLOYER 2 -->
+               <div class="group-header">
+                    <h1 class="govuk-heading-l group-title ">TESCO</h1>
+               </div>
+
+               <p class="govuk-body-m">Cohort: RPL89L</p>
+               <p class="govuk-caption-m govuk-!-font-size-19">2 apprentices, total cost: £2,500</p>
+               <a href="review-cohort-created" class="govuk-link govuk-link--no-visited-state govuk-!-font-size-19">Review apprentices</a>
+               <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!-width-two-thirds">
+               <!-- END EMPLOYER 2 -->
+
+               <!-- EMPLOYER 3 -->
+               <div class="group-header">
+                    <h1 class="govuk-heading-l group-title ">ONA CONSULTING LTD</h1>
+               </div>
+
+               <p class="govuk-body-m">Cohort: This will be created when you save or send to employers</p>
+               <p class="govuk-caption-m govuk-!-font-size-19">1 apprentice, total cost: £1,500</p>
+               <a href="review-cohort-new" class="govuk-link govuk-link--no-visited-state govuk-!-font-size-19">Review apprentice</a>
+               <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!-width-two-thirds">
+               <!-- END EMPLOYER 3 -->
+
+               <!-- EMPLOYER 4 -->
+               <div class="group-header">
+                    <h1 class="govuk-heading-l group-title ">COMPLIANCE LIMITED</h1>
+               </div>
+
+               <p class="govuk-body-m">Cohort: This will be created when you save or send to employers</p>
+               <p class="govuk-caption-m govuk-!-font-size-19">10 apprentices, total cost: £10,500</p>
+               <a href="review-cohort-new" class="govuk-link govuk-link--no-visited-state govuk-!-font-size-19">Review apprentices</a>
+               <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!-margin-top-8">
+               <!-- END EMPLOYER 4 -->
+
+
+               <!--  RADIO BUTTONS -->
+               <div class="govuk-form-group">
+
+                    <form method="post">
+
+                    <fieldset class="govuk-fieldset">
+                        <h2 class="govuk-heading-l govuk-!-margin-top-4">
+                          Choose an option
+                        </h2>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="details-save" name="bulk-upload-confirm" type="radio" value="details-save">
+                          <label class="govuk-label govuk-radios__label" for="details-save">
+                            Save all but don't send to employer(s)
+                          </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                         <input class="govuk-radios__input" id="details-new-file" name="bulk-upload-confirm" type="radio" value="details-new-file">
+                         <label class="govuk-label govuk-radios__label" for="details-new-file">
+                           Upload an amended file
+                         </label>
+                       </div>
+                      </div>
+                  
+                    </fieldset>
+                  </div>               
+               <!--  END RADIO BUTTONS -->
+
+               <!-- CTA'S -->
+               <button class="govuk-button" data-module="govuk-button">
+                    Continue
+               </button>
+               <p class="gov-body govuk-!-margin-bottom-8"><a class="govuk-link" href="discard-file">Cancel and discard the upload</a></p>
+
+               <!-- END CTA's -->
+
+          </div>
+
+     </div>
+</div>
+{% endblock %}
+{% endblock %}
