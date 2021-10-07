@@ -7,7 +7,7 @@
 
 {% block main %}
 
-{% include "../includes/account-header+nav.html" %}
+{% include "includes/account-header+nav.html" %}
 
 {% block content %}
 
@@ -42,7 +42,11 @@
                               </fieldset>
                          </div>
 
-                         <button class="govuk-button" data-module="govuk-button">Continue</button>
+                        {{ govukButton({
+                             text: "Continue",
+                             
+                               href: "manual"
+                        }) }}
 
                     </form>
 

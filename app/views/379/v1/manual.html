@@ -34,21 +34,21 @@
                 Add to an existing cohort
               </label>
             </div>
-            <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="new-cohort" name="manual-add" type="radio" value="new-cohort">
-              <label class="govuk-label govuk-radios__label" for="new-cohort">
-                Create a new cohort
-              </label>
-            </div>
+            <br>
+          
           </div>
-      
+          {{ govukInsetText({
+            text: "             You do not have permission to create cohorts. If you feel you should have permission to carry out this function you will need to speak to the relevant employer and ensure you have the correct permissions.
+            "
+          }) }}
         </fieldset>
       </div>
       
 
-      <button class="govuk-button" data-module="govuk-button">
-        Continue
-      </button>
+      {{ govukButton({
+        text: "Continue",
+        href: "existing-cohorts"
+      }) }}
 
   </main>
 </div>
