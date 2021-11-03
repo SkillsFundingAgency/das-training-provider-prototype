@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Bulk upload apprentices
+{% endblock %}
+
+
+{% block main %}
+
+{% include "../includes/account-header+nav.html" %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+	
+  <a href="#" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+			
+          <h1 class="govuk-heading-xl">Bulk upload apprentices</h1>
+
+          <p class="govuk-body">You can add details of multiple apprentices at the same time (bulk upload) using a csv file.</p>
+
+         <p class="govuk-body">You will need to know the employer agreement ID, this can be found on your <a href="organisations-and-agreements">Organisations and agreements page</a>.</p>
+
+          <div class="govuk-inset-text govuk-!-font-size-16">
+            Uploading a file will overwrite any existing apprentice information in your cohort.
+          </div>
+
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                Help with bulk upload
+              </span>
+            </summary>
+            <div class="govuk-details__text govuk-!-font-size-16">
+              You must use a csv file to upload apprentice details.<br><br>
+              If you have a management information system, it may be able to create a csv file for you.<br><br>
+              Alternatively, a bulk upload template and further details of each field are available - <a href="#">view apprenticeship service bulk upload guidance</a>.
+            </div>
+          </details>
+
+          <!-- FILE UPLOAD -->
+          <div class="govuk-form-group govuk-!-margin-top-6">
+            <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+          </div>			    
+          <!-- END FILE UPLOAD -->
+
+          <!-- CTA -->
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+         <!-- END CTA -->
+
+
+
+      </div>
+    </div>
+  </main>
+  
+  
+ 
+
+  
+  
+</div>
+{% endblock %}
+
+{% endblock %}

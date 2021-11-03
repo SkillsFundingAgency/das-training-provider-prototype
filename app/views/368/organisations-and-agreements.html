@@ -1,0 +1,95 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Bulk uploads prototype - Training provider
+{% endblock %}
+
+
+{% block main %}
+
+{% include "../includes/account-header+nav.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+     <a href="bulk-upload-apprentices" class="govuk-back-link">Back</a>
+
+     <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+
+
+     <h1 class="govuk-heading-xl govuk-!-margin-top-9">Organisations and agreements</h1>
+
+     <p class="govuk-body">Listed below is every organisation you work with on the apprenticeship service and their agreement ID.</p>
+     <p class="govuk-body">You will need to add the agreement ID to the individualised learner record (ILR), and to your learner management system (LMS), if you use one. This allows us to provide users with better error messages whenever a data mismatch occurs.</p>
+
+        <!-- SEARCH - START -->
+        <div class="govuk-form-group">
+          <h1 class="govuk-label-wrapper"><label class="govuk-label" for="search">Search organisation name</label></h1>
+          <div class="search-container govuk-!-width-two-thirds">
+                <input class="govuk-input" id="search" name="search" type="text">
+                <span class="icon search"></span>
+          </div>
+      </div>
+      <!-- SEARCH - END -->
+   
+     <table class="govuk-table">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Organisation</th>
+          <th scope="col" class="govuk-table__header">Agreement ID</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">AUTOMATION & OPTIMISATION LTD</td>
+          <td class="govuk-table__cell">7877B7</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">BARBERRY COVENTRY LIMITED</td>
+          <td class="govuk-table__cell">86KRBN</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">BARRY & BARRY LIMITED</td>
+          <td class="govuk-table__cell">77N9B6</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">COVENTRY & WARWICKSHIRE CHAMBER OF COMMERCE</td>
+          <td class="govuk-table__cell">9D676G</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">COVENTRY ACCOUNTANTS LTD</td>
+          <td class="govuk-table__cell">7L8PJL</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">ESFA LTD</td>
+          <td class="govuk-table__cell">79967B</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">ONA CONSULTING</td>
+          <td class="govuk-table__cell">65967B</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">SAINSBURY'S </td>
+          <td class="govuk-table__cell">4R7B9K</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">SUBHA LIMITED</td>
+          <td class="govuk-table__cell">4R98D6</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">TESCO</td>
+          <td class="govuk-table__cell">6PLKYL</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+      </div>
+     </div>
+</div>
+
+{% endblock %}
+{% endblock %}
