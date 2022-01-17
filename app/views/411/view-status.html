@@ -1,0 +1,87 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Manage apprenticeships
+{% endblock %}
+
+
+{% block main %}
+
+{% include "../includes/account-header+nav.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a href="view-invited-employers" class="govuk-back-link">Back</a>
+
+	<main class="govuk-main-wrapper">
+
+<div class="govuk-grid-row">
+	<div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-9">
+      View status
+    </h1>
+
+
+    <p class="govuk-body">
+      View the actions completed by <b>ACCOUNTANTS LTD</b> n setting up their employer account.
+    </p>
+
+
+    <!-- table start -->
+    <dl class="govuk-summary-list">
+      <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+              Account created
+          </dt>
+          <dd class="govuk-summary-list__value">
+              Yes
+              <input id="EmployerOrganisation" name="EmployerOrganisation" type="hidden" value="COMPANY LIMITED">
+          </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+            PAYE scheme
+        </dt>
+        <dd class="govuk-summary-list__value">
+           Added
+            <input id="EmployerEmailAddress" name="EmployerEmailAddress" type="hidden">
+        </dd>
+    </div>
+
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+            Legal agreement
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Not yet accepted
+            <input id="EmployerEmailAddress" name="EmployerEmailAddress" type="hidden">
+        </dd>
+    </div>
+
+
+      <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+              Permissions
+          </dt>
+          <dd class="govuk-summary-list__value">
+             <b>EDUC8 TRAINING (ENGLAND)</b><br>
+             Cannot add apprentice records <br>
+             Cannot create job adverts
+              <input id="EmployerEmailAddress" name="EmployerEmailAddress" type="hidden">
+          </dd>
+      </div>
+
+  </dl>      
+  <!-- table end -->  
+
+
+    </div>
+  </main>
+
+  </div>
+</div>    
+{% endblock %}
+{% endblock %}
