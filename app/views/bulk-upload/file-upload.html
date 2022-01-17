@@ -19,8 +19,8 @@
   <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <form action="file-upload-errors" method="post" novalidate>
-			
+        <form action="file-upload-errors" method="post">
+
           <h1 class="govuk-heading-xl">Upload a CSV file</h1>
            
           <!-- FILE UPLOAD -->
@@ -40,6 +40,21 @@
          <!-- END CTA -->
 
 
+
+         <!-- error message: need to add in  novalidate data-validate='error-state-validation' into the form thing above also if wanting it to work 
+        
+          <script type="application/json" id="error-state-validation">
+          { 		  
+            "file-upload-1": {
+              "presence": {
+                "message": "^The selected file must be a CSV"
+              }
+            }
+    
+          }
+        </script>
+        
+        end error message -->
 
       </div>
     </div>
