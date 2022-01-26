@@ -1,9 +1,12 @@
-node_modules/
+# ignore tracking usage data config - we want a different one for each user
+usage-data-config.json
+# ignore extension SCSS because it's dynamically generated
+lib/extensions/_extensions.scss
+.env
+.sass-cache
 .DS_Store
-.idea
-
-/public/stylesheets/unbranded.css
-/public/stylesheets/unbranded-ie8.css
-/public/stylesheets/application.css
-/public/stylesheets/application-ie8.css
-/lib/extensions/_extensions.scss
+.start.pid
+.port.tmp
+public
+node_modules/*
+.tmuxp.*
