@@ -49,7 +49,10 @@
     "glob": "^7.1.4",
     "jest": "^27.3.1",
     "standard": "^14.3.3",
-    "supertest": "^6.1.6"
+    "supertest": "^6.1.6",
+    "postcss": ">=8.2.13",
+    "json-schema": ">=0.4.0",
+    "follow-redirects": ">=1.14.7"
   },
   "jest": {
     "testRunner": "jest-jasmine2"
