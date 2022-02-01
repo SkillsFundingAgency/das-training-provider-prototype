@@ -34,7 +34,7 @@
 	<div class="govuk-grid-row">
 	    <div class="govuk-grid-column-full">
 
-		    <h1 class="govuk-heading-l  govuk-!-margin-top-4">Your CSV file has the following errors </h1>
+		    <h1 class="govuk-heading-l  govuk-!-margin-top-4">There is a problem with your CSV file </h1>
 
 			<div class="govuk-warning-text">
 				<span class="govuk-warning-text__icon" aria-hidden="true">!</span>
@@ -47,7 +47,8 @@
 
 							<!-- ERROR TABLE 1 -->
 		<div class="govuk-form-group govuk-form-group--error">
-			<table class="govuk-table govuk-!-margin-top-8">
+			<h2 class="govuk-heading-m  govuk-!-margin-top-4">Your CSV file has the following errors </h2>
+			<table class="govuk-table">
 				<caption class="govuk-table__caption govuk-table__caption--s govuk-!-margin-bottom-4 govuk-error-message">
 					<span id="file-error-error" class="govuk-error-message">
 					<span class="govuk-visually-hidden">Error:</span>You need to correct the errors and upload the file again</caption>
@@ -128,13 +129,11 @@
 			<!-- REUPLOAD CSV FILE -->
 			<form action="file-upload-check" method="post" class="govuk-!-margin-top-8" novalidate>
 
-			<legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-	            <h1 class="govuk-fieldset__heading">
-	              Upload your amended file
-	            </h1>
-	          </legend>
-
 			  <div class="govuk-form-group govuk-!-margin-top-6">
+				<h2 class="govuk-heading-m ">
+					Upload your amended file
+				  </h2>
+  
 				<label class="govuk-label" for="file-upload-1">
 				Your CSV file should not have more than 100 rows
 				</label>
