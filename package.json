@@ -52,7 +52,7 @@
     "supertest": "^6.1.6",
     "postcss": ">=8.2.13",
     "json-schema": ">=0.4.0",
-    "follow-redirects": ">=1.14.7"
+    "follow-redirects": ">=1.14.8"
   },
   "jest": {
     "testRunner": "jest-jasmine2"
