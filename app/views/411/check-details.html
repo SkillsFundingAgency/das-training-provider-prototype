@@ -31,7 +31,7 @@
       Once the employer receives the invitation, they will need to enter some details, then add the PAYE scheme for their organisation and accept the legal agreement.    
     </p>
 
-<form action="confirmation" method="post">
+
 
 
     <!-- table start -->
@@ -91,11 +91,14 @@
    <a href="#">See a copy of the email the employer will receive</a> (opens in a new tab)
   </p>
 
-  <button class="govuk-button" data-module="govuk-button">
-    Send invitation
-</button>
 
-</form>
+
+{{ govukButton({
+  text: "Send invitation",
+  href: "confirmation"
+}) }}
+
+
 
     </div>
   </main>

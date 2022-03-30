@@ -292,6 +292,16 @@ router.post('/cohort/warning', (req, res) => {
 	}
 })
 
+//411
+router.post('/411/confirmation', function (req, res) {
+  const editChoice = req.session.data['what-next']
+
+  if (editChoice === 'invited-employers') {
+    res.redirect('view-invited-employers')
+  } else if (editChoice === 'homepage') {
+    res.redirect('homepage')
+  }
+});
 
 
 module.exports = router
