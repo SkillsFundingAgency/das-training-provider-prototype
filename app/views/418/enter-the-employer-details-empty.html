@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Manage apprenticeships
+{% endblock %}
+
+
+{% block main %}
+
+{% include "../includes/account-header+nav.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+	<a href="#" class="govuk-back-link">Back</a>
+  
+	<main class="govuk-main-wrapper">
+
+<div class="govuk-grid-row">
+	<div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-9">
+      Enter the employer details
+    </h1>
+
+<p class="govuk-body">
+  Enter the details for the employer. Once the account is created, the employer will be able to add other users.
+</p>
+
+<form action="check-details" method="post">
+
+<!-- text inputs -->
+<div class="govuk-form-group">
+  <label class="govuk-label" for="event-name">
+    Employer organisation
+  </label>
+  <input class="govuk-input" id="event-name" name="event-name" type="text"></div>
+
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="event-name">
+      Employer first name
+    </label>
+    <input class="govuk-input" id="event-name" name="event-name" type="text"></div>
+  
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="event-name">
+        Employer last name
+      </label>
+      <input class="govuk-input" id="event-name" name="event-name" type="text"></div>
+  
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="event-name">
+          Employer email address
+        </label>
+        <span id="email-hint" class="govuk-hint">
+          We'll send an email to the employer to confirm their identity.
+      </span>
+        <input class="govuk-input" id="event-name" name="event-name" type="text"></div>
+  <!-- end text inputs -->
+
+
+  <button class="govuk-button" data-module="govuk-button">
+    Continue
+</button>
+
+</form>
+
+    </div>
+  </main>
+
+  </div>
+</div>    
+{% endblock %}
+{% endblock %}

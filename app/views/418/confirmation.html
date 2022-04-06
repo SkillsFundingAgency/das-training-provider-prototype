@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Manage apprenticeships
+{% endblock %}
+
+
+{% block main %}
+
+{% include "../includes/account-header+nav.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  
+	<main class="govuk-main-wrapper">
+
+<div class="govuk-grid-row">
+	<div class="govuk-grid-column-two-thirds">
+
+    <div class="govuk-panel govuk-panel--confirmation govuk-!-margin-bottom-9">
+      <h1 class="govuk-panel__title">
+        Invitation sent to employer
+      </h1>
+    </div>
+
+
+    <form action="confirmation" method="post">
+      {{ govukRadios({
+        idPrefix: "what-next",
+        name: "what-next",
+        fieldset: {
+          legend: {
+            text: "What do you want to do next?",
+            isPageHeading: true,
+            classes: "govuk-fieldset__legend--l"
+          }
+        },
+        items: [
+          {
+            value: "another-account",
+            text: "Set up another account"
+          },
+          {
+            value: "invited-employers",
+            text: "View invited employers"
+          },
+          {
+            value: "homepage",
+            text: "Return to homepage"
+          }
+        ]
+      }) }}
+
+      {{ govukButton({
+        text: "Continue"
+      }) }}
+    </form>
+
+
+
+
+
+    </div>
+  </main>
+
+  </div>
+</div>    
+{% endblock %}
+{% endblock %}

@@ -1,0 +1,110 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Manage apprenticeships
+{% endblock %}
+
+
+{% block main %}
+
+{% include "../includes/account-header+nav.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+	<a href="homepage" class="govuk-back-link">Back</a>
+  
+	<main class="govuk-main-wrapper">
+
+<div class="govuk-grid-row">
+	<div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">
+      Manage employer invitations
+    </h1>
+<p class="govuk-body">
+  Send email to employers to set up their apprenticeship service account.
+</p>
+
+
+{{ govukButton({
+  text: "Send invitation to employer",
+  href: "start"
+
+}) }}
+
+    <h2 class="govuk-heading-m govuk-!-margin-top-6">
+      Invited employers
+    </h2>
+
+    <p class="govuk-body">
+      Employers already invited to set up their apprenticeship service account.
+    </p>
+    
+  </div>
+  <div class="govuk-grid-column-full">
+
+    <!-- table start -->
+	  <table class="govuk-table  govuk-!-margin-bottom-8" id="manage-apprenticeships-table" style="font-size: 19px;">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+        <th scope="col" class="govuk-table__header" onclick="sortApprenticeships(0)"><div class="sort">Employer organisation</th>
+        <th scope="col" class="govuk-table__header" onclick="sortApprenticeships(0)"><div class="sort">Name</th>
+          <th scope="col" class="govuk-table__header" onclick="sortApprenticeships(0)"><div class="sort">Employer email</th>
+        <th scope="col" class="govuk-table__header" onclick="sortApprenticeships(0)"><div class="sort">Date sent</th>
+        <th scope="col" class="govuk-table__header" onclick="sortApprenticeships(1)"><div class="sort">Status</th>
+        <th scope="col" class="govuk-table__header"></th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+        <td class="govuk-table__cell">COMPANY LIMITED</td>
+        <td class="govuk-table__cell">Hazel Fletcher</td>
+        <td class="govuk-table__cell">hazel.fletcher@email.co.uk</td>
+        <td class="govuk-table__cell">22 Dec 21</td>
+        <td class="govuk-table__cell">Account creation not started</td>
+        <td class="govuk-table__cell"><a href="check-details">Resend email</a></td>
+        </tr>
+
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">FRIENDS OF BRIANTSPUDDLE POST OFFICE AND VILLAGE SHOP ASSOCIATION LIMITED</td>
+          <td class="govuk-table__cell">Karen Garland</td>
+          <td class="govuk-table__cell">karen.garland@email.co.uk</td>
+          <td class="govuk-table__cell">01 Apr 22</td>
+          <td class="govuk-table__cell">PAYE scheme added</td>
+          <td class="govuk-table__cell"><a href="view-status-fobpo">View status</a></td>
+        </tr>
+
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">MECHANICS LTD</td>
+          <td class="govuk-table__cell">Stu Bamforth</td>
+          <td class="govuk-table__cell">stu.bamforth@email.co.uk</td>
+          <td class="govuk-table__cell">03 Dec 21</td>
+          <td class="govuk-table__cell">Legal agreement accepted</td>
+          <td class="govuk-table__cell"><a href="view-status">View status</a></td>
+        </tr>
+
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">THE UNIVERSITY HOSPITAL OF SOUTH MANCHESTER NHS FOUNDATION TRUST</td>
+          <td class="govuk-table__cell">Annukka Odeyer</td>
+          <td class="govuk-table__cell">annukka.odeyer@email.co.uk</td>
+          <td class="govuk-table__cell">04 Dec 21</td>
+          <td class="govuk-table__cell">Account creation started</td>
+          <td class="govuk-table__cell"><a href="view-status">View status</a></td>
+        </tr>
+
+
+        
+        </tr>
+      </tbody>
+      </table>		
+      <!-- table end -->  
+
+    </div>
+
+    </div>
+  </main>
+
+  </div>
+</div>    
+{% endblock %}
+{% endblock %}

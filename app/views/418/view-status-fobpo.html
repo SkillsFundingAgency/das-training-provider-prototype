@@ -1,0 +1,113 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Manage apprenticeships
+{% endblock %}
+
+
+{% block main %}
+
+{% include "../includes/account-header+nav.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a href="view-invited-employers" class="govuk-back-link">Back</a>
+
+	<main class="govuk-main-wrapper">
+
+<div class="govuk-grid-row">
+	<div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">
+      Employer account status
+    </h1>
+
+    <h2 class="govuk-heading-l govuk-!-margin-bottom-9">
+      FRIENDS OF BRIANTSPUDDLE POST OFFICE AND VILLAGE SHOP ASSOCIATION LIMITED
+    </h2>
+
+    <!-- table start -->
+    <dl class="govuk-summary-list">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+            Invitation sent:
+        </dt>
+        <dd class="govuk-summary-list__value">
+            01 April 2022
+            <input id="EmployerOrganisation" name="EmployerOrganisation" type="hidden" value="COMPANY LIMITED">
+        </dd>
+    </div>
+
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+          Invitation resent:
+      </dt>
+      <dd class="govuk-summary-list__value">
+          11 April 2022
+          <input id="EmployerOrganisation" name="EmployerOrganisation" type="hidden" value="COMPANY LIMITED">
+      </dd>
+    </div>
+
+      <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+              Account creation started:
+          </dt>
+          <dd class="govuk-summary-list__value">
+              12 April 2022
+              <input id="EmployerOrganisation" name="EmployerOrganisation" type="hidden" value="COMPANY LIMITED">
+          </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+            PAYE scheme added:
+        </dt>
+        <dd class="govuk-summary-list__value">
+          12 April 2022
+            <input id="EmployerEmailAddress" name="EmployerEmailAddress" type="hidden">
+        </dd>
+    </div>
+
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+            Legal agreement accepted:
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Not yet accepted
+            <input id="EmployerEmailAddress" name="EmployerEmailAddress" type="hidden">
+        </dd>
+    </div>
+
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+          Training provider added:
+      </dt>
+      <dd class="govuk-summary-list__value">
+        No training provider added yet
+          <input id="EmployerEmailAddress" name="EmployerEmailAddress" type="hidden">
+      </dd>
+  </div>
+
+
+      <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+              Training provider permissions:
+          </dt>
+          <dd class="govuk-summary-list__value">
+            No training provider added yet
+              <input id="EmployerEmailAddress" name="EmployerEmailAddress" type="hidden">
+          </dd>
+      </div>
+
+  </dl>      
+  <!-- table end -->  
+
+
+    </div>
+  </main>
+
+  </div>
+</div>    
+{% endblock %}
+{% endblock %}
