@@ -22,7 +22,7 @@ Manage apprenticeships
       Manage employer invitations
     </h1>
 <p class="govuk-body">
-  Send email to employers to set up their apprenticeship service account.
+  Send email to employers to create their apprenticeship service account.
 </p>
 
 
@@ -37,19 +37,24 @@ Manage apprenticeships
     </h2>
 
     <p class="govuk-body">
-      Employers already invited to set up their apprenticeship service account.
-    </p>
+      <!--Employers already invited to set up their apprenticeship service account.</p> -->
+      
+      {{ govukInsetText({
+        text: "The resend invitation will only show if the employer has not yet started to create their account."
+      }) }}
+      
+
     
   </div>
   <div class="govuk-grid-column-full">
 
     <!-- table start -->
-	  <table class="govuk-table  govuk-!-margin-bottom-8" id="manage-apprenticeships-table" style="font-size: 19px;">
+	  <table class="govuk-table  govuk-!-margin-bottom-8" id="manage-apprenticeships-table" style="table-layout: fixed;font-size: 19px">
       <thead class="govuk-table__head">
         <tr class="govuk-table__row">
-        <th scope="col" class="govuk-table__header" onclick="sortApprenticeships(0)"><div class="sort">Employer organisation</th>
-        <th scope="col" class="govuk-table__header" onclick="sortApprenticeships(0)"><div class="sort">Name</th>
-          <th scope="col" class="govuk-table__header" onclick="sortApprenticeships(0)"><div class="sort">Employer email</th>
+        <th scope="col" class="govuk-table__header" onclick="sortApprenticeships(0)" style="width:21%"><div class="sort">Employer organisation</th>
+        <th scope="col" class="govuk-table__header" onclick="sortApprenticeships(0)" style="width:17%"><div class="sort">Name</th>
+          <th scope="col" class="govuk-table__header" onclick="sortApprenticeships(0)" style="width:23%"><div class="sort">Employer email</th>
         <th scope="col" class="govuk-table__header" onclick="sortApprenticeships(0)"><div class="sort">Date sent</th>
         <th scope="col" class="govuk-table__header" onclick="sortApprenticeships(1)"><div class="sort">Status</th>
         <th scope="col" class="govuk-table__header"></th>
@@ -62,7 +67,7 @@ Manage apprenticeships
         <td class="govuk-table__cell">hazel.fletcher@email.co.uk</td>
         <td class="govuk-table__cell">28 Mar 22</td>
         <td class="govuk-table__cell">Account creation not started</td>
-        <td class="govuk-table__cell"><a href="check-details">Resend email</a></td>
+        <td class="govuk-table__cell"><a href="check-details">Resend invitation</a></td>
         </tr>
 
         <tr class="govuk-table__row">
@@ -85,15 +90,15 @@ Manage apprenticeships
 
         <tr class="govuk-table__row">
           <td class="govuk-table__cell">THE UNIVERSITY HOSPITAL OF SOUTH MANCHESTER NHS FOUNDATION TRUST</td>
-          <td class="govuk-table__cell">Alexander Oxlade-Chamberlain</td>
-          <td class="govuk-table__cell">alexander.oxlade-chamberlain@mft.nhs.uk</td>
+          <td class="govuk-table__cell">Alexander Oxlade Chamberlain</td>
+          <td class="govuk-table__cell" style=" width: 110px; word-wrap: break-word; ">alexander.oxladechamberlain@affdfsdfsdfsdfsdffsfm.co.uk</td>
           <td class="govuk-table__cell">04 Apr 22</td>
           <td class="govuk-table__cell">Account creation started</td>
           <td class="govuk-table__cell"><a href="view-status-nhs">View status</a></td>
         </tr>
 
 
-        
+   
         </tr>
       </tbody>
       </table>		
