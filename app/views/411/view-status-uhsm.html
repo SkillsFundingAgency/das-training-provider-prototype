@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Manage apprenticeships
+{% endblock %}
+
+
+{% block main %}
+
+{% include "../includes/account-header+nav.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a href="view-invited-employers" class="govuk-back-link">Back</a>
+
+	<main class="govuk-main-wrapper">
+
+<div class="govuk-grid-row">
+	<div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-9">
+      THE UNIVERSITY HOSPITAL OF SOUTH MANCHESTER NHS FOUNDATION TRUST
+    </h1>
+
+    <!-- table start -->
+    <dl class="govuk-summary-list">
+      <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+              Account created
+          </dt>
+          <dd class="govuk-summary-list__value">
+              Yes
+              <input id="EmployerOrganisation" name="EmployerOrganisation" type="hidden" value="COMPANY LIMITED">
+          </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+            PAYE scheme
+        </dt>
+        <dd class="govuk-summary-list__value">
+           Not added yet
+            <input id="EmployerEmailAddress" name="EmployerEmailAddress" type="hidden">
+        </dd>
+    </div>
+
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+            Legal agreement
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Not accepted yet
+            <input id="EmployerEmailAddress" name="EmployerEmailAddress" type="hidden">
+        </dd>
+    </div>
+
+
+      <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+              Training provider permissions
+          </dt>
+          <dd class="govuk-summary-list__value">
+             Cannot add apprentice records <br>
+             Cannot create job adverts
+              <input id="EmployerEmailAddress" name="EmployerEmailAddress" type="hidden">
+          </dd>
+      </div>
+
+  </dl>      
+  <!-- table end -->  
+
+
+    </div>
+  </main>
+
+  </div>
+</div>    
+{% endblock %}
+{% endblock %}
